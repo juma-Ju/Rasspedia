@@ -51,6 +51,7 @@ font-size: 0.95em;
 
 nav a:hover {
 text-decoration: underline;
+color: #ffd700;
 }
 
 /* Main Layout */
@@ -95,6 +96,7 @@ text-decoration: none;
 
 .sidebar ul li a:hover {
 text-decoration: underline;
+color: #ffd700;
 }
 
 /* Content */
@@ -152,6 +154,7 @@ text-decoration: none;
 
 .toc ul li a:hover {
 text-decoration: underline;
+color: #ffd700;
 }
 
 /* Footer */
