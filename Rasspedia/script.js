@@ -1,3 +1,8 @@
+// ToDo
+//script datei aufteilen?
+//@juma-Ju Verschiedene Designs hinzufügen
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const weaponMenu = document.getElementById("weaponMenu");
     weaponMenu.style.display = "none";
