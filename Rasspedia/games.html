@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Standard Seite</title>
+    <title>Memory-Spiel</title>
     <link rel="stylesheet" href="styles.css"> <!-- Optional, für externes CSS -->
 </head>
 <body>
     <header>
-        <h1>Das sind die Games, auf die wir zugreifen können</h1>
+        <h1>Willkommen auf meiner Webseite!</h1>
+        <button id="startGameBtn">Memory-Spiel starten</button>
     </header>
-    <main>
-        <section>
-            <p>Dies ist eine einfache Standard-Seite mit einer Überschrift.</p>
-            <p>Egal was iasjfdökjdsölflökjdlkf</p>
-        </section>
-    </main>
+
+    <div id="gameContainer" style="display:none;">
+        <h2>Memory-Spiel</h2>
+        <div id="memoryBoard"></div>
+        <button id="resetBtn">Neues Spiel</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
