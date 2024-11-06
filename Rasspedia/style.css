@@ -1,3 +1,7 @@
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
 *{
 margin: 0;
 padding: 0;
@@ -9,12 +13,13 @@ font-family: 'Linux Libertine', 'Georgia', serif;
 color: #222;
 background-color: #fff;
 line-height: 1.6;
+font-size: 1.6rem;
 }
 
 /* Header */
 header {
 background-color: black;
-padding: 20px;
+padding: 2rem;
 text-align: center;
 border-bottom: 1px solid #a2a9b1;
 
@@ -31,14 +36,14 @@ color: #ffd700;
 
 /* Navigation */
 nav {
-background-color: #eaecf0;
-padding: 10px;
+background-color: #cecece;
+padding: 1rem;
 text-align: center;
 border-bottom: 1px solid #a2a9b1;
 }
 
 nav a {
-margin: 0 10px;
+margin: 0 1rem;
 color: #0645ad;
 text-decoration: none;
 font-size: 0.95em;
@@ -58,7 +63,7 @@ margin: 0;
 /* Sidebar */
 .sidebar {
 width: 10%;
-padding: 20px;
+padding: 2rem;
 background-color: #f8f9fa;
 border-right: 1px solid #a2a9b1;
 font-size: 0.85em;
@@ -71,12 +76,12 @@ z-index: 8;
 .sidebar h2 {
 font-size: 1em;
 color: #333;
-margin-bottom: 10px;
+margin-bottom: 1rem;
 }
 
 .sidebar ul {
 list-style: none;
-padding-left: 10px;
+padding-left: 1rem;
 }
 
 .sidebar ul li {
@@ -95,37 +100,41 @@ text-decoration: underline;
 /* Content */
 .content {
 width: 80%;
-padding: 20px;
+padding: 2rem;
 font-size: 0.9em;
-margin: 20px auto;
+margin: 2rem auto;
 max-width: 960px;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
 }
 
 .content h2 {
 font-size: 1.5em;
 color: #333;
 border-bottom: 1px solid #a2a9b1;
-padding-bottom: 5px;
-margin-bottom: 10px;
+padding-bottom: 0.5rem;
+margin-bottom: 1rem;
 }
 
 .content p {
-margin: 10px 0;
+margin: 1rem 0;
 }
 
 /* Table of Contents */
 .toc {
 background-color: #f9f9f9;
-border: 1px solid #a2a9b1;
-padding: 15px;
-margin-bottom: 20px;
+border: 2px solid #383838;
+border-radius: 1rem;
+padding: 1.5rem;
+margin-bottom: 2rem;
 font-size: 0.85em;
 }
 
 .toc h3 {
 font-size: 1em;
 color: #333;
-margin-bottom: 10px;
+margin-bottom: 1rem;
 }
 
 .toc ul {
@@ -133,7 +142,7 @@ list-style-type: none;
 }
 
 .toc ul li {
-margin: 5px 0;
+margin: 0.3rem 0;
 }
 
 .toc ul li a {
@@ -148,7 +157,7 @@ text-decoration: underline;
 /* Footer */
 footer {
 background-color: #f2f2f2;
-padding: 20px;
+padding: 2rem;
 text-align: center;
 border-top: 1px solid #a2a9b1;
 font-size: 0.85em;
@@ -180,9 +189,9 @@ text-decoration: underline;
         "top top top"
         "left center right"
         "bottom bottom bottom";
-    gap: 10px;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    gap: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -191,9 +200,9 @@ text-decoration: underline;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 1rem;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    border-radius: 1rem;
     cursor: pointer;
     transition: background 0.2s ease;
 }
