@@ -19,6 +19,10 @@ text-align: center;
 border-bottom: 1px solid #a2a9b1;
 }
 
+header p {
+    color: white;
+}
+
 header h1 {
 font-size: 1.75em;
 color: #333;
@@ -57,6 +61,7 @@ padding: 20px;
 background-color: #f8f9fa;
 border-right: 1px solid #a2a9b1;
 font-size: 0.85em;
+display: ;
 }
 
 .sidebar h2 {
