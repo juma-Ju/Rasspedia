@@ -1,6 +1,6 @@
 // ToDo
 //script datei aufteilen?
-//@juma-Ju Verschiedene Designs hinzufügen
+//@Jannis Verschiedene Designs hinzufügen
 
 
 document.addEventListener("DOMContentLoaded", function () {
