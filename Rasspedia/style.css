@@ -1,221 +1,239 @@
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-font-family: 'Linux Libertine', 'Georgia', serif;
-color: #222;
-background-color: #fff;
-line-height: 1.6;
-font-size: 1.6rem;
+  font-family: "Linux Libertine", "Georgia", serif;
+  color: #222;
+  background-color: #fff;
+  line-height: 1.6;
+  font-size: 1.6rem;
 }
 
 /* Header */
 header {
-background-color: black;
-padding: 2rem;
-text-align: center;
-border-bottom: 1px solid #a2a9b1;
-
+  background-color: black;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #a2a9b1;
 }
 
 header p {
-    color: white;
+  color: white;
 }
 
 header h1 {
-font-size: 1.75em;
-color: #ffd700;
+  font-size: 1.75em;
+  color: #ffd700;
 }
 
 /* Navigation */
 nav {
-background-color: #cecece;
-padding: 1rem;
-text-align: center;
-border-bottom: 1px solid #a2a9b1;
+  background-color: #cecece;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #a2a9b1;
 }
 
 nav a {
-margin: 0 1rem;
-color: #0645ad;
-text-decoration: none;
-font-size: 0.95em;
+  margin: 0 1rem;
+  color: #0645ad;
+  text-decoration: none;
+  font-size: 0.95em;
 }
 
 nav a:hover {
-text-decoration: underline;
-color: #ffd700;
+  text-decoration: underline;
+  color: #ffd700;
 }
 
 /* Main Layout */
 main {
-display: flex;
+  display: flex;
 
-margin: 0;
+  margin: 0;
 }
 
 /* Sidebar */
 .sidebar {
-width: 10%;
-padding: 2rem;
-background-color: #f8f9fa;
-border-right: 1px solid #a2a9b1;
-font-size: 0.85em;
-/* position: fixed; */
-position: relative;
-height: 100vh;
-z-index: 8;
+  width: 10%;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-right: 1px solid #a2a9b1;
+  font-size: 0.85em;
+  /* position: fixed; */
+  position: relative;
+  height: 100vh;
+  z-index: 8;
 }
 
 .sidebar h2 {
-font-size: 1em;
-color: #333;
-margin-bottom: 1rem;
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 1rem;
 }
 
 .sidebar ul {
-list-style: none;
-padding-left: 1rem;
+  list-style: none;
+  padding-left: 1rem;
 }
 
 .sidebar ul li {
-margin: 8px 0;
+  margin: 8px 0;
 }
 
 .sidebar ul li a {
-color: #0645ad;
-text-decoration: none;
+  color: #0645ad;
+  text-decoration: none;
 }
 
 .sidebar ul li a:hover {
-text-decoration: underline;
-color: #ffd700;
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* welcome */
+.welcome {
+  text-align: center;
+  margin: auto;
 }
 
 /* Content */
 .content {
-width: 80%;
-padding: 2rem;
-font-size: 0.9em;
-margin: 2rem auto;
-max-width: 960px;
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
+  width: 80%;
+  padding: 2rem;
+  font-size: 0.9em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+  max-width: 960px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .content h2 {
-font-size: 1.5em;
-color: #333;
-border-bottom: 1px solid #a2a9b1;
-padding-bottom: 0.5rem;
-margin-bottom: 1rem;
+  font-size: 1.5em;
+  color: #333;
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .content p {
-margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 /* Table of Contents */
 .toc {
-background-color: #f9f9f9;
-border: 2px solid #383838;
-border-radius: 1rem;
-padding: 1.5rem;
-margin-bottom: 2rem;
-font-size: 0.85em;
+  background-color: #f9f9f9;
+  border: 2px solid #383838;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 0.85em;
 }
 
 .toc h3 {
-font-size: 1em;
-color: #333;
-margin-bottom: 1rem;
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 1rem;
 }
 
 .toc ul {
-list-style-type: none;
+  list-style-type: none;
 }
 
 .toc ul li {
-margin: 0.3rem 0;
+  margin: 0.3rem 0;
 }
 
 .toc ul li a {
-color: #0645ad;
-text-decoration: none;
+  color: #0645ad;
+  text-decoration: none;
 }
 
 .toc ul li a:hover {
-text-decoration: underline;
-color: #ffd700;
+  text-decoration: underline;
+  color: #ffd700;
 }
 
 /* Footer */
 footer {
-background-color: #f2f2f2;
-padding: 2rem;
-text-align: center;
-border-top: 1px solid #a2a9b1;
-font-size: 0.85em;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #a2a9b1;
+  font-size: 0.85em;
 }
 
 footer a {
-color: #0645ad;
-text-decoration: none;
+  color: #0645ad;
+  text-decoration: none;
 }
 
 footer a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .weapon-menu {
-    display: none;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    font-family: Arial, sans-serif;
-    display: grid;
-    grid-template-areas:
-        "top top top"
-        "left center right"
-        "bottom bottom bottom";
-    gap: 1rem;
-    padding: 2rem;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-    border: 2px solid rgba(255, 255, 255, 0.1);
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-areas:
+    "top top top"
+    "left center right"
+    "bottom bottom bottom";
+  gap: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .weapon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: background 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
 
-.weapon-top { grid-area: top; }
-.weapon-left { grid-area: left; }
-.weapon-center { grid-area: center; }
-.weapon-right { grid-area: right; }
-.weapon-bottom { grid-area: bottom; }
+.weapon-top {
+  grid-area: top;
+}
+.weapon-left {
+  grid-area: left;
+}
+.weapon-center {
+  grid-area: center;
+}
+.weapon-right {
+  grid-area: right;
+}
+.weapon-bottom {
+  grid-area: bottom;
+}
 
 .weapon:hover {
-    background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
