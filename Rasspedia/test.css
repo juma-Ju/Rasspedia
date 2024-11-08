@@ -4,13 +4,17 @@
   --m: 4rem;
 }
 
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: black;
+  background-color: #181818;
   color: white;
   font-family: "IBM Plex Sans";
   font-weight: 300;
@@ -23,15 +27,19 @@ body {
   margin: 0;
   color: #d5d5d5;
   font-size: calc(0.3 * var(--m));
+
+  font-size: 16px;
+
 }
 
 /* Header */
 header {
-    background: linear-gradient(0deg, #000000, #353535);
+    background: linear-gradient(0deg, #181818, #525252);
     padding: 2rem;
     text-align: center;
     display: block;
     width: 100%;
+    padding-left: 25.8rem;
 }
 
 header p {
@@ -49,6 +57,8 @@ nav {
     text-align: center;
     border: 2px solid #ffd700;
     border-radius: 0.8rem;
+    width: 50rem;
+    margin: auto;
 }
 
 nav a {
@@ -68,11 +78,13 @@ main {
     /* display: flex; */
     margin: 0;
     width: 100%;
+    padding-left: 25.8rem;
 }
 
 /* Sidebar */
 .sidebar {
-    width: 10%;
+    background-color: #000;
+    width: 250px;
     padding: 2rem;
     padding-left: .8rem;
     border: 2px solid #6c48cf;
@@ -130,11 +142,12 @@ main {
     align-self: center;
     width: 70%;
     margin: auto;
-
+    padding: 3rem;
 }
 
 .content p {
     margin: 1rem 0;
+    color: black;
 }
 
 /* Table of Contents */
@@ -169,6 +182,54 @@ main {
 .toc ul li a:hover {
     text-decoration: underline;
     color: #ffd700;
+}
+
+.heroes-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.heroes-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.heroes-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero {
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.hero h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.hero p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.hero:hover {
+    transform: scale(1.05);
 }
 
 h2 {
