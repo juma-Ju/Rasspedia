@@ -65,7 +65,7 @@ nav a:hover {
 
 /* Main Layout */
 main {
-    display: flex;
+    /* display: flex; */
     margin: 0;
     width: 100%;
 }
@@ -84,7 +84,7 @@ main {
     z-index: 8;
     top: .8rem;
     left: .8rem;
-    
+    min-width: 150px;
     
 }
 
@@ -118,9 +118,57 @@ main {
     text-align: center;
     margin: auto;
     margin-top: 1.5rem;
-    background: linear-gradient(120deg, #ff8064, #725bdc);
+    /* background-color: #ffffff6b; */
     border-radius: calc(0.5 * var(--m));
     padding: 2rem;
+    width: 100%;
+}
+
+.content {
+    background: linear-gradient(120deg, #ff8064, #725bdc);
+    border-radius: calc(0.5 * var(--m));
+    align-self: center;
+    width: 70%;
+    margin: auto;
+
+}
+
+.content p {
+    margin: 1rem 0;
+}
+
+/* Table of Contents */
+.toc {
+    background-color: #ffffff59;
+    border: 2px solid #383838;
+    border-radius: calc(0.5 * var(--m));
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.85em;
+}
+
+.toc h3 {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.toc ul {
+    list-style-type: none;
+}
+
+.toc ul li {
+    margin: 0.3rem 0;
+}
+
+.toc ul li a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+.toc ul li a:hover {
+    text-decoration: underline;
+    color: #ffd700;
 }
 
 h2 {
