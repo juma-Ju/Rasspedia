@@ -140,7 +140,7 @@ main {
     background: linear-gradient(120deg, #ff8064, #725bdc);
     border-radius: calc(0.5 * var(--m));
     align-self: center;
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding: 3rem;
 }
@@ -192,6 +192,7 @@ main {
 .heroes-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #3b3b3b;
 }
 
 .heroes-container {
@@ -213,13 +214,15 @@ main {
 
 .hero img {
     width: 100%;
-    border-radius: 15px;
+    height: auto;
+    border-radius: 10px;
     object-fit: cover;
 }
 
 .hero h3 {
     font-size: 1.2rem;
     margin: 10px 0 5px;
+    color: #333;
 }
 
 .hero p {
