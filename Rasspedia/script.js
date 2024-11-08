@@ -1,6 +1,7 @@
 // ToDo
 //script datei aufteilen?
 //@Jannis Verschiedene Designs hinzufügen
+//Habe jetzt menü so gemacht, dass man nur einmal alt drückt und es offen bleibt(Aza)
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -9,24 +10,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let isAltPressed = false;
 
+
     document.addEventListener("keydown", function (event) {
         if (event.key === "Alt" && !isAltPressed) {
             isAltPressed = true;
-            requestAnimationFrame(() => {
-                weaponMenu.style.display = "grid";
-            });
+            toggleWeaponMenu();
         }
     });
 
+
     document.addEventListener("keyup", function (event) {
-        if (event.key === "Alt" && isAltPressed) {
+        if (event.key === "Alt") {
             isAltPressed = false;
-            requestAnimationFrame(() => {
-                weaponMenu.style.display = "none";
-            });
         }
     });
+
+
+    function toggleWeaponMenu() {
+        if (weaponMenu.style.display === "none" || weaponMenu.style.display === "") {
+            weaponMenu.style.display = "grid";
+        } else {
+            weaponMenu.style.display = "none";
+        }
+    }
 });
+
 
 document.getElementById("startGameBtn").addEventListener("click", startGame);
 
