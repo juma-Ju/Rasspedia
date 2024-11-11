@@ -97,7 +97,12 @@ main {
     top: .8rem;
     left: .8rem;
     min-width: 150px;
-    
+}
+
+.sidebar .spanline {
+  /* background-color: red; */
+  height: 10px;
+  width: 60px;
 }
 
 .sidebar h2 {
@@ -112,7 +117,7 @@ main {
 }
 
 .sidebar ul li {
-    margin: 8px 0;
+    margin: 1rem 0;
 }
 
 .sidebar ul li a {
