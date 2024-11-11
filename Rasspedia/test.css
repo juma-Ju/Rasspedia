@@ -268,7 +268,7 @@ h3 {
 
   position: fixed;
   margin: calc(2 * var(--m)) calc(5 * var(--m)) calc(5 * var(--m))
-    calc(5 * var(--m));
+  calc(5 * var(--m));
 }
 
 button {
