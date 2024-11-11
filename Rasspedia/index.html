@@ -4,127 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rasspedia</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="test.css" />
   </head>
   <body>
-
     <!-- Header -->
     <header>
       <h1>Rasspedia</h1>
       <p>Ein Projekt gegen Rassismus - Gelbe Hand Projekt</p>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-      <a href="#">Hauptseite</a>
-      <a href="#">Über Rassismus</a>
-      <a href="#">Kategorien</a>
-      <a href="#">Kontakt</a>
-    </nav>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Kategorien</h2>
+      <ul>
+        <li><a href="#">Anti-Schwarzer Rassismus</a></li>
+        <span class="spanline">---------------------------------------</span>
+        <li><a href="#">Anti-asiatischer Rassismus</a></li>
+        <span class="spanline">---------------------------------------</span>
+        <li><a href="#">Antisemitismus</a></li>
+        <span class="spanline">---------------------------------------</span>
+        <li><a href="#">Antimuslimischer Rassismus</a></li>
+        <span class="spanline">---------------------------------------</span>
+        <li><a href="#">Anti-Indigener Rassismus</a></li>
+        <span class="spanline">---------------------------------------</span>
+        <li><a href="#">Anti-Roma-Rassismus (Antiziganismus)</a></li>
+        <span class="spanline">---------------------------------------</span>
+        <li><a href="#">Rassismus gegenüber Menschen aus dem Nahen und Mittleren Osten</a></li>
+        <span class="spanline">---------------------------------------</span>
+        <li><a href="#">Rassismus gegen lateinamerikanische Menschen</a></li>
+        <span class="spanline">---------------------------------------</span>
+        <li><a href="#">Rassismus gegenüber anderen Gruppen</a></li>
+        <span class="spanline">---------------------------------------</span>
+        <li><a href="#">Gallerie</a></li>
+      </ul>
+    </aside>
 
-    
     <!-- Main Content -->
     <main>
 
-      <!-- Sidebar -->
-      <aside class="sidebar">
-        <h2>Kategorien</h2>
-        <ul>
-          <li><a href="#">Rassismus gegen Schwarze</a></li>
-          <li><a href="#">Rassismus gegen andere Gruppen</a></li>
-          <li><a href="#">Maßnahmen</a></li>
-          <li><a href="#">Ressourcen</a></li>
-        </ul>
-      </aside>
+      <!-- Navigation -->
+      <nav>
+        <a href="#">Hauptseite</a>
+        <a href="#">Über Rassismus</a>
+        <a href="#">Kategorien</a>
+        <a href="#">Kontakt</a>
+      </nav>
+      
 
       <div class="welcome">
         <H1>Wilkommen bei Rasspedia</H1>
-        <H4>Wir sind eine Freie Informationsquelle über Rassismus, Seine Auswirkungen, Seine Arten und Seine Opfer.</H4>
+        <H4>Wir sind eine Freie Informationsquelle über Rassismus, seine Auswirkungen, seine Arten und seine Opfer.</H4>
       </div>
-      
+
       <!-- Content Area -->
       <section class="content">
         <div class="toc">
           <h3>Inhaltsverzeichnis</h3>
           <ul>
             <li><a href="#einleitung">Einleitung</a></li>
-            <li><a href="#definitionen">Definitionen</a></li>
+            <li><a href="#definitionen">Was findest du bei uns?</a></li>
             <li><a href="#historische-entwicklung">Historische Entwicklung</a></li>
             <li><a href="#auswirkungen">Auswirkungen</a></li>
             <li><a href="#gegenmaßnahmen">Gegenmaßnahmen</a></li>                      
           </ul>
         </div>
 
-        <div class="weapon-menu" id="weaponMenu">   <!--  aza -->
-          <div class="weapon weapon-top">Rassismus</div>
-          <div class="weapon weapon-left">
-            <a href="games.html" target="_blank"> <!-- Da bin ich mir nicht sicher wie man das richtig verlinkt!!  bzw muss ich grad mittlere maustaste drücken um auf die games seite zu kommen-->
-              <p>Games</p>
-            </a>
+        <p id="einleitung">Rassismus ist ein globales Problem, das Menschen täglich in verschiedenen Formen betrifft. Unsere Mission bei Rasspedia ist es, Wissen zu vermitteln, Vorurteile abzubauen und ein tieferes Verständnis für die verschiedenen Facetten von Rassismus zu fördern. Als frei zugängliche Plattform bieten wir umfassende Informationen über die Geschichte, die Arten und die Auswirkungen von Rassismus. Unser Ziel ist es, ein Bewusstsein für die Probleme, mit denen Betroffene konfrontiert sind, zu schaffen und den Kampf gegen Diskriminierung und Vorurteile zu unterstützen.</p>
+
+        <h4>Was findest du bei uns?</h4>
+
+        <p>Rasspedia bietet dir einen Überblick über verschiedene Formen von Rassismus weltweit, von historischer Unterdrückung bis hin zu aktuellen Herausforderungen. Wir beleuchten die Erfahrungen von Opfern, beschreiben gesellschaftliche und politische Maßnahmen gegen Rassismus und stellen Ressourcen zur Verfügung, die helfen, Diskriminierung zu erkennen und aktiv dagegen vorzugehen.</p>
+
+        <h4>Spiele und Lernmöglichkeiten</h4>
+
+        <p>Um das Lernen interaktiv zu gestalten, haben wir außerdem einige Minispiele integriert, die auf verschiedenen Seiten zu finden sind. Diese sollen Wissen spielerisch vertiefen und den Umgang mit dem Thema leichter zugänglich machen.</p>
+
+        <p>Danke, dass du Rasspedia besuchst. Gemeinsam können wir ein Bewusstsein schaffen und eine Welt ohne Rassismus fördern.</p>
+
+
+
+        <section class="heroes-section">
+          <h2>Unser Team</h2>
+          <div class="heroes-container">
+              <div class="hero">
+                  <img src="Alexander.jpg" alt="Jannis">
+                  <h3>Alexander</h3>
+                  <p>Backend</p>
+              </div>
+              <div class="hero">
+                  <img src="Azamat.jpg" alt="James">
+                  <h3>Azamat Winkler</h3>
+                  <p>Backend</p>
+              </div>
+              <div class="hero">
+                  <img src="Elias.jpg" alt="Aisha">
+                  <h3>Elias</h3>
+                  <p>Artikel</p>
+              </div>
+              <div class="hero">
+                  <img src="Jannis.jpg" alt="Carlos">
+                  <h3>Jannis Weber</h3>
+                  <p>Design</p>
+              </div>
+              <div class="hero">
+                  <img src="Paul.jpg" alt="Sophia">
+                  <h3>Paul</h3>
+                  <p>Artikel</p>
+              </div>
           </div>
-          <div class="weapon weapon-center">saff</div>
-          <div class="weapon weapon-right">dsfdste</div>
-          <div class="weapon weapon-bottom">sadsadr</div>
-        </div>
-
-
-        <div class="text">
-
-          <div class="team">
-            <H3>Wer wir sind:</H3>
-            <div class="teamBilder">
-              <img src="#" alt="img_Alexander">
-              <img src="#" alt="img_Azamat">
-              <img src="#" alt="img_Elias">
-              <img src="#" alt="img_Jannis">
-              <img src="#" alt="img_Paul">
-            </div>
-            <div class="TeamNamen">
-              <p>Alexander</p>
-              <p>Azamat Winkler</p>
-              <p>Elias</p>
-              <p>Jannis Weber</p>
-              <p>Paul</p>
-            </div>
-          </div>
-          
-          
-
-
-
-
-        </div>
-
-        <!-- <h2 id="einleitung">Einleitung</h2>
-        <p>Rassismus gegen Schwarze Menschen umfasst Vorurteile, Diskriminierung und systematische Ungleichheiten, die Menschen afrikanischer Abstammung betreffen. Diese Art des Rassismus hat historische Wurzeln und wirkt sich bis heute auf das Leben Schwarzer Menschen weltweit aus.</p>
-
-        <h2 id="definitionen">Definitionen</h2>
-        <p>Rassismus gegen Schwarze ist eine Form von Diskriminierung, die auf Stereotypen, sozialer Marginalisierung und institutioneller Unterdrückung basiert. Er äußert sich in vielen Bereichen, darunter Bildung, Arbeitsmarkt und Strafrecht.</p>
-
-        <h2 id="historische-entwicklung">Historische Entwicklung</h2>
-        <p>Historisch gesehen reicht Rassismus gegen Schwarze zurück in die Kolonialzeit und die Versklavung afrikanischer Menschen. Diese Geschichte hat zu institutionellen und gesellschaftlichen Strukturen geführt, die Rassismus gegen Schwarze verfestigen.</p>
-
-        <h2 id="auswirkungen">Auswirkungen</h2>
-        <p>Schwarze Menschen erleben aufgrund von Rassismus schlechtere Chancen im Bildungswesen, auf dem Arbeitsmarkt und in der medizinischen Versorgung. Auch psychologische Auswirkungen sind häufig, wie z.B. Traumata durch rassistische Erfahrungen.</p>
-
-        <h2 id="gegenmaßnahmen">Gegenmaßnahmen</h2>
-        <p>Maßnahmen gegen Rassismus beinhalten Bildung, Anti-Diskriminierungsgesetze und gezielte Initiativen zur Förderung von Inklusion und Chancengleichheit. Organisationen wie "Black Lives Matter" setzen sich für die Rechte Schwarzer Menschen ein.</p> -->
-
-
-
       </section>
+
+
+
+
+
+
+        
+      </section>
+    
+
+
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Rasspedia | Gelbe Hand Projekt | <a href="#">Kontaktieren Sie uns</a></p>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="card">
+      <h1>Rasspedia</h1><h2>Die Wissens-datenbank über Rassismus</h2>
+      <button><a href="#footer">Scroll</a></button>
+    </div> -->
+    <footer id="footer">
+      <div class="col col1">
+        <h3>Rasspedia</h3>
+        <p>Made with <span style="color: #BA6573;">❤ </span>by E1IT1</p>
+        <div class="social">
+          <a href="https://codepen.io/Juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/codepen_1.png" alt="" /></a>
+          <a href="https://twitter.com/juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
+          <a href="https://youtube.com/@juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/youtube_1.png" alt="" /></a>
+        </div>
+        <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
+      </div>
+      <div class="col col2">
+        <p>About</p>
+        <p>Our mission</p>
+        <p>Privacy Policy</p>
+        <p>Terms of service</p>
+      </div>
+      <div class="col col3">
+        <p>Services</p>
+        <p>Products</p>
+        <p>Join our team</p>
+        <p>Partner with us</p>
+      </div>
+      <div class="backdrop"></div>
     </footer>
-
-
-
-
-
-    <script src="script.js"></script>
-
   </body>
 </html>
