@@ -14,8 +14,9 @@ if ($conn->connect_error) {
 }
 
 // SQL query to select all data from your table
-$sql = "SELECT * FROM artikel";
+$sql = "SELECT * FROM artikel ORDER BY id ASC ";
 $result = $conn->query($sql);
+$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -62,50 +63,45 @@ $result = $conn->query($sql);
     <!-- Main Content -->
     <main>
 
-        <!-- Navigation -->
-        <nav>
-        <a href="#">Hauptseite</a>
-        <a href="#">Über Rassismus</a>
-        <a href="#">Alle Artikel</a>
-        <a href="#">Kontakt</a>
-        </nav>
+      <!-- Navigation -->
+      <nav>
+      <a href="#">Hauptseite</a>
+      <a href="#">Über Rassismus</a>
+      <a href="#">Alle Artikel</a>
+      <a href="#">Kontakt</a>
+      </nav>
+
+      <!-- Content Area -->
+      <section class="content">
+
+        <h2 class="titel"> Unsere Artikel</h2>
 
 
-        <div class="welcome">
-        <H1>Wilkommen bei Rasspedia</H1>
-        <H4>Wir sind eine Freie Informationsquelle über Rassismus, seine Auswirkungen, seine Arten und seine Opfer.</H4>
-        </div>
+        <div class="artikelListe">
+          <?php 
+            // LOOP TILL END OF DATA
+            while($rows=$result->fetch_assoc())
+            {
+          ?>
 
-        <!-- Content Area -->
-        <section class="content">
+          <a href="/artikel.php?id=<?php echo $rows['id'];?> ">
+            <div class="artikelField">
+              <span>
+                <?php echo $rows['titel'];?>
+              </span>
 
-            <h2 class="titel"></h2>
-
-
-
-            <div class="toc">
-            <h3>Inhaltsverzeichnis</h3>
-            <ul>
-                <li><a href="#pglink1">Unsere Mission</a></li>
-                <li><a href="#pglink2">Was findest du bei uns?</a></li>
-                <li><a href="#pglink3">Spiele und Lernmöglichkeiten</a></li>
-                <li><a href="#pglink4">Unser Team</a></li>
-                <li><a href="#"></a></li>
-            </ul>
+              <p>
+                Zuletzt bearbeitet:
+                <?php echo $rows['zeit'];?>
+              </p>
             </div>
-
-            <p class="einfuerung" id="pg_link_1">
-                einfuerung
-            </p>
-
-            <p class="haupttext" id="pg_link_1">
-                haupttext
-            </p>
-
-
-
-            
-        </section>
+          </a>
+        
+          <?php
+            }
+          ?>
+        </div>
+      </section>
     </main>
 
     
