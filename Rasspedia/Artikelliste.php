@@ -24,7 +24,7 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rasspedia</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="artikelliste.css" />
   </head>
   <body>
     <!-- Header -->
@@ -107,6 +107,9 @@ $result = $conn->query($sql);
             
         </section>
     </main>
+
+    
+
     <!-- <div class="card">
       <h1>Rasspedia</h1><h2>Die Wissens-datenbank über Rassismus</h2>
       <button><a href="#footer">Scroll</a></button>
