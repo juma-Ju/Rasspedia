@@ -13,10 +13,49 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+
+$beschreibung = "";
+$titel = "";
+$startdatum = "";
+$startzeit = "";
+$enddatum = "";
+$endzeit = "";
+
+if ($id > 0) {
+
+    $sql = "SELECT beschreibung, titel, startdatum, startzeit, enddatum, endzeit FROM kurs WHERE id = $id";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+
+        $row = $result->fetch_assoc();
+        $beschreibung = $row['beschreibung'];
+        $titel = $row['titel'];
+        $startdatum = $row['startdatum'];
+        $startzeit = $row['startzeit'];
+        $enddatum = $row['enddatum'];
+        $endzeit = $row['endzeit'];
+    } else {
+        echo "Kein Eintrag gefunden.";
+    }
+} else {
+    echo "Ungültige ID.";
+}
+
 // SQL query to select all data from your table
 $sql = "SELECT * FROM artikel ORDER BY id ASC ";
 $result = $conn->query($sql);
 $conn->close();
+
+echo "Titel: " . $titel . "<br>";
+echo "Beschreibung: " . $beschreibung . "<br>";
+echo "Startdatum: " . $startdatum . "<br>";
+echo "Startzeit: " . $startzeit . "<br>";
+echo "Enddatum: " . $enddatum . "<br>";
+echo "Endzeit: " . $endzeit . "<br>";
+
+
 ?>
 
 <!DOCTYPE html>
@@ -73,23 +112,7 @@ $conn->close();
 
       <!-- Content Area -->
       <section class="content">
-
-        <h2 class="titel"> Unsere Artikel</h2>
-
-
-        <div class="artikelListe">
-          <?php 
-            // LOOP TILL END OF DATA
-            while($rows=$result->fetch_assoc())
-            {
-          ?>
-
-                ERR
         
-          <?php
-            }
-          ?>
-        </div>
       </section>
     </main>
 
