@@ -75,8 +75,24 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rasspedia</title>
     <link rel="stylesheet" type="text/css" href="artikelliste.css" />
+    <link rel="stylesheet" type="text/css" href="simditor.css" />
   </head>
   <body>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="module.js"></script>
+    <script type="text/javascript" src="hotkeys.js"></script>
+    <script type="text/javascript" src="uploader.js"></script>
+    <script type="text/javascript" src="simditor.js"></script>
+
+
+
+
+
+
+
+
+
     <!-- Header -->
     <header>
         <h1>Rasspedia</h1>
@@ -154,6 +170,21 @@ $conn->close();
             <p><strong>Autor:</strong> <?php echo htmlspecialchars($autor); ?></p>
           </div>
           
+
+          <textarea id="editor" placeholder="Balabala" autofocus></textarea>
+
+
+          <script>
+            var editor = new Simditor({
+              textarea: $('#editor')
+              //optional options
+            });
+
+          </script>
+
+
+
+
         </div>
 
       </section>
