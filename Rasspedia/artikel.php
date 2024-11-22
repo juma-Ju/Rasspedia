@@ -74,16 +74,18 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rasspedia</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="artikelliste.css" />
-    <link rel="stylesheet" type="text/css" href="simditor.css" />
+    <link rel="stylesheet" type="text/css" href="simditor/site/assets/styles/simditor.css" />
   </head>
   <body>
 
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="module.js"></script>
-    <script type="text/javascript" src="hotkeys.js"></script>
-    <script type="text/javascript" src="uploader.js"></script>
-    <script type="text/javascript" src="simditor.js"></script>
+
+  <script type="text/javascript" src="simditor/site/assets/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="simditor/site/assets/scripts/module.js"></script>
+<script type="text/javascript" src="simditor/site/assets/scripts/hotkeys.js"></script>
+<script type="text/javascript" src="simditor/site/assets/scripts/uploader.js"></script>
+<script type="text/javascript" src="simditor/site/assets/scripts/simditor.js"></script>
 
 
 
@@ -171,7 +173,7 @@ $conn->close();
           </div>
           
 
-          <textarea id="editor" placeholder="Balabala" autofocus></textarea>
+          <textarea id="editor" placeholder="" autofocus></textarea>
 
 
           <script>

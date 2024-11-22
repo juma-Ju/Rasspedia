@@ -26,6 +26,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rasspedia</title>
     <link rel="stylesheet" type="text/css" href="artikelliste.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
   <body>
     <!-- Header -->
