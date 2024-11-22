@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+
 // Database credentials
 $servername = "localhost";
 $username = "rasspdbc";
@@ -15,27 +19,31 @@ if ($conn->connect_error) {
 
 $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
-$beschreibung = "";
 $titel = "";
-$startdatum = "";
-$startzeit = "";
-$enddatum = "";
-$endzeit = "";
+$einfuerung = "";
+$haupttext = "";
+$schluss = "";
+$quellen = "";
+$nuetzliches = "";
+$zeit = "";
+$autor = "";
 
 if ($id > 0) {
 
-    $sql = "SELECT beschreibung, titel, startdatum, startzeit, enddatum, endzeit FROM kurs WHERE id = $id";
+    $sql = "SELECT titel, einfuerung, haupttext, schluss, quellen, nuetzliches, zeit, autor FROM artikel WHERE id = $id";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
 
         $row = $result->fetch_assoc();
-        $beschreibung = $row['beschreibung'];
         $titel = $row['titel'];
-        $startdatum = $row['startdatum'];
-        $startzeit = $row['startzeit'];
-        $enddatum = $row['enddatum'];
-        $endzeit = $row['endzeit'];
+        $einfuerung = $row['einfuerung'];
+        $haupttext = $row['haupttext'];
+        $schluss = $row['schluss'];
+        $quellen = $row['quellen'];
+        $nuetzliches = $row['nuetzliches'];
+        $zeit = $row['zeit'];
+        $autor = $row['autor'];
     } else {
         echo "Kein Eintrag gefunden.";
     }
@@ -48,12 +56,14 @@ $sql = "SELECT * FROM artikel ORDER BY id ASC ";
 $result = $conn->query($sql);
 $conn->close();
 
-echo "Titel: " . $titel . "<br>";
-echo "Beschreibung: " . $beschreibung . "<br>";
-echo "Startdatum: " . $startdatum . "<br>";
-echo "Startzeit: " . $startzeit . "<br>";
-echo "Enddatum: " . $enddatum . "<br>";
-echo "Endzeit: " . $endzeit . "<br>";
+// echo "titel: " . $titel . "<br>";
+// echo "einfuerung: " . $einfuerung . "<br>";
+// echo "haupttext: " . $haupttext . "<br>";
+// echo "schluss: " . $schluss . "<br>";
+// echo "quellen: " . $quellen . "<br>";
+// echo "nuetzliches: " . $nuetzliches . "<br>";
+// echo "zeit: " . $zeit . "<br>";
+// echo "autor: " . $autor . "<br>";
 
 
 ?>
@@ -102,10 +112,52 @@ echo "Endzeit: " . $endzeit . "<br>";
 
       <!-- Content Area -->
       <section class="content">
-        
+
+        <div class="container">
+
+          <h2>
+            <?php echo htmlspecialchars($titel); ?>
+          </h2>
+
+          <h3>Einführung:</h3>
+
+          <div class="einfuerung">
+            <?php echo htmlspecialchars($einfuerung); ?>
+          </div>
+
+          <h3>Hauptteil:</h3>
+
+          <div class="haupttext">
+            <?php echo htmlspecialchars($haupttext); ?>
+          </div>
+
+          <h3>Schluss:</h3>
+
+          <div class="haupttext">
+            <?php echo htmlspecialchars($schluss); ?>
+          </div>
+
+          <h3>Quellen:</h3>
+
+          <div class="haupttext">
+            <?php echo htmlspecialchars($quellen); ?>
+          </div>
+
+          <h3>Nützliches:</h3>
+
+          <div class="haupttext">
+            <?php echo htmlspecialchars($nuetzliches); ?>
+          </div>
+
+          <div class="details">
+            <p><strong>Letzte Änderung:</strong> <?php echo htmlspecialchars($zeit); ?></p>
+            <p><strong>Autor:</strong> <?php echo htmlspecialchars($autor); ?></p>
+          </div>
+          
+        </div>
+
       </section>
     </main>
-
     
 
     <!-- <div class="card">
