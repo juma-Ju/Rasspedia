@@ -120,76 +120,28 @@ $conn->close();
     <!-- Main Content -->
     <main>
 
-      <!-- Navigation -->
-      <nav>
-        <a href="index.html">Hauptseite</a>
-        <a href="#">Über Rassismus XXX</a>
-        <a href="artikelliste.php">Alle Artikel</a>
-        <a href="#">Kontakt XXX</a>
-      </nav>
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html">Hauptseite</a>
+            <a href="#">Über Rassismus XXX</a>
+            <a href="artikelliste.php">Alle Artikel</a>
+            <a href="#">Kontakt XXX</a>
+        </nav>
 
-      <!-- Content Area -->
-      <section class="content">
+        <!-- Content Area -->
+        <section class="content">
 
-        <div class="container">
+            <textarea id="editor" placeholder="" autofocus></textarea>
 
-          <h2>
-            <?php echo htmlspecialchars($titel); ?>
-          </h2>
+            <script>
+                var editor = new Simditor({
+                textarea: $('#editor')
+                //optional options
+                });
 
-          <h3>Einführung:</h3>
+            </script>
 
-          <div class="einfuerung">
-            <?php echo htmlspecialchars($einfuerung); ?>
-          </div>
-
-          <h3>Hauptteil:</h3>
-
-          <div class="haupttext">
-            <?php echo htmlspecialchars($haupttext); ?>
-          </div>
-
-          <h3>Schluss:</h3>
-
-          <div class="haupttext">
-            <?php echo htmlspecialchars($schluss); ?>
-          </div>
-
-          <h3>Quellen:</h3>
-
-          <div class="haupttext">
-            <?php echo htmlspecialchars($quellen); ?>
-          </div>
-
-          <h3>Nützliches:</h3>
-
-          <div class="haupttext">
-            <?php echo htmlspecialchars($nuetzliches); ?>
-          </div>
-
-          <div class="details">
-            <p><strong>Letzte Änderung:</strong> <?php echo htmlspecialchars($zeit); ?></p>
-            <p><strong>Autor:</strong> <?php echo htmlspecialchars($autor); ?></p>
-          </div>
-          
-
-          <textarea id="editor" placeholder="" autofocus></textarea>
-
-
-          <script>
-            var editor = new Simditor({
-              textarea: $('#editor')
-              //optional options
-            });
-
-          </script>
-
-
-
-
-        </div>
-
-      </section>
+        </section>
     </main>
     
 
