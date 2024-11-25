@@ -46,35 +46,45 @@
         <a href="index.html">Hauptseite</a>
         <a href="#">Über Rassismus XXX</a>
         <a href="artikelliste.php">Alle Artikel</a>
-        <a href="#">Kontakt XXX</a>
+        <a href="erstellen.html">Neuer Artikel</a>
     </nav>
 
     <!-- Content Area -->
     <section class="content">
         <form method="post" action="create_article.php" id="article-form">
             <label for="titel">Titel:</label>
-            <input type="text" id="titel" name="titel" required></input>
+            <input type="text" id="titel" name="titel" required>
+            <br>
+            <br>
 
             <label for="einfuerung">Einfuhrung:</label>
-            <textarea id="einfuerung" name="einfuerung"></textarea>
+            <textarea id="einfuerung" name="einfuerung" required></textarea>
+            <br>
 
             <label for="haupttext">Haupttext:</label>
-            <textarea id="haupttext" name="haupttext"></textarea>
+            <textarea id="haupttext" name="haupttext" required></textarea>
+            <br>
 
             <label for="schluss">Schluss:</label>
-            <textarea id="schluss" name="schluss"></textarea>
+            <textarea id="schluss" name="schluss" required></textarea>
+            <br>
 
             <label for="quellen">Quellen:</label>
-            <textarea id="quellen" name="quellen"></textarea>
+            <textarea id="quellen" name="quellen" required></textarea>
+            <br>
 
             <label for="nuetzliches">Nuetzliches:</label>
-            <textarea id="nuetzliches" name="nuetzliches"></textarea>
+            <textarea id="nuetzliches" name="nuetzliches" required></textarea>
+            <br>
 
             <label for="zeit">Zeit:</label>
-            <input type="datetime-local" id="zeit" name="zeit">
+            <input type="datetime-local" id="zeit" name="zeit" required>
+            <br>
 
             <label for="autor">Autor:</label>
-            <input type="text" id="autor" name="autor">
+            <input type="text" id="autor" name="autor" required>
+            <br>
+            <br>
 
             <button type="submit" name="submit">Speichern</button>
         </form>
@@ -107,8 +117,8 @@
         <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
     </div>
     <div class="col col2">
-        <p>Über Uns</p>
-        <p>Unsere Mission</p>
+        <p>XXX</p>
+        <p>Kontakt</p>
         <p>Datenschutzerklärung</p>
         <p>Impressum</p>
     </div>

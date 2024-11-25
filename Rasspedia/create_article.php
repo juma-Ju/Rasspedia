@@ -44,6 +44,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit']) && !$saved) 
         if ($conn->query($sql_insert) === TRUE) {
             $message = "Der Artikel wurde erfolgreich hinzugefügt.";
             $saved = true;
+
+            echo "<script type='text/javascript'>
+                var newWindow = window.open('', '_blank', 'width=400,height=200');
+                newWindow.document.write('<html><head><title>Artikel-ID</title></head><body><p>Die ID des gespeicherten Artikels war: $next_id</p></body></html>');
+                newWindow.document.close();
+                setTimeout(function() {
+                    window.location.href = 'artikel.php?id=$next_id';
+                }, 500);
+            </script>";
         } else {
             $message = "Fehler beim Hinzufügen des Artikels: " . $conn->error;
         }
@@ -51,8 +60,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit']) && !$saved) 
 }
 
 $conn->close();
-
-echo "Die ID des gespeicherten Artikel war: ", $next_id, ". ";
 ?>
 
 <html>
@@ -66,6 +73,6 @@ echo "Die ID des gespeicherten Artikel war: ", $next_id, ". ";
         }
     </style>
     <body>
-        <a href="artikel.php?id=<?php echo $next_id; ?>">Zu dem Artikel gehen</a>
+        <?php if (!empty($message)) { echo "<p>$message</p>"; } ?>
     </body>
 </html>

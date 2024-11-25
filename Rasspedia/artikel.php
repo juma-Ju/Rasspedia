@@ -76,24 +76,8 @@ $conn->close();
     <title>Rasspedia</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="artikelliste.css" />
-    <link rel="stylesheet" type="text/css" href="simditor/site/assets/styles/simditor.css" />
   </head>
   <body>
-
-
-  <script type="text/javascript" src="simditor/site/assets/scripts/jquery.min.js"></script>
-<script type="text/javascript" src="simditor/site/assets/scripts/module.js"></script>
-<script type="text/javascript" src="simditor/site/assets/scripts/hotkeys.js"></script>
-<script type="text/javascript" src="simditor/site/assets/scripts/uploader.js"></script>
-<script type="text/javascript" src="simditor/site/assets/scripts/simditor.js"></script>
-
-
-
-
-
-
-
-
 
     <!-- Header -->
     <header>
@@ -125,7 +109,7 @@ $conn->close();
         <a href="index.html">Hauptseite</a>
         <a href="#">Über Rassismus XXX</a>
         <a href="artikelliste.php">Alle Artikel</a>
-        <a href="#">Kontakt XXX</a>
+        <a href="erstellen.html">Neuer Artikel</a>
       </nav>
 
       <!-- Content Area -->
@@ -195,8 +179,8 @@ $conn->close();
         <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
       </div>
       <div class="col col2">
-        <p>Über Uns</p>
-        <p>Unsere Mission</p>
+        <p>XXX</p>
+        <p>Kontakt</p>
         <p>Datenschutzerklärung</p>
         <p>Impressum</p>
       </div>

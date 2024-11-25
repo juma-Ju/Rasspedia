@@ -59,7 +59,7 @@ $conn->close();
         <a href="index.html">Hauptseite</a>
         <a href="#">Über Rassismus XXX</a>
         <a href="artikelliste.php">Alle Artikel</a>
-        <a href="#">Kontakt XXX</a>
+        <a href="erstellen.html">Neuer Artikel</a>
       </nav>
 
       <!-- Content Area -->
@@ -111,8 +111,8 @@ $conn->close();
         <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
       </div>
       <div class="col col2">
-        <p>Über Uns</p>
-        <p>Unsere Mission</p>
+        <p>XXX</p>
+        <p>Kontakt</p>
         <p>Datenschutzerklärung</p>
         <p>Impressum</p>
       </div>
