@@ -134,55 +134,43 @@ $conn->close();
         <div class="container">
 
           <h2>
-            <?php echo htmlspecialchars($titel); ?>
+            <?php echo $titel; ?>
           </h2>
 
           <h3>Einführung:</h3>
 
           <div class="einfuerung">
-            <?php echo htmlspecialchars($einfuerung); ?>
+            <?php echo $einfuerung; ?>
           </div>
 
           <h3>Hauptteil:</h3>
 
           <div class="haupttext">
-            <?php echo htmlspecialchars($haupttext); ?>
+            <?php echo $haupttext; ?>
           </div>
 
           <h3>Schluss:</h3>
 
           <div class="haupttext">
-            <?php echo htmlspecialchars($schluss); ?>
+            <?php echo $schluss; ?>
           </div>
 
           <h3>Quellen:</h3>
 
           <div class="haupttext">
-            <?php echo htmlspecialchars($quellen); ?>
+            <?php echo $quellen; ?>
           </div>
 
           <h3>Nützliches:</h3>
 
           <div class="haupttext">
-            <?php echo htmlspecialchars($nuetzliches); ?>
+            <?php echo $nuetzliches; ?>
           </div>
 
           <div class="details">
             <p><strong>Letzte Änderung:</strong> <?php echo htmlspecialchars($zeit); ?></p>
             <p><strong>Autor:</strong> <?php echo htmlspecialchars($autor); ?></p>
           </div>
-          
-
-          <textarea id="editor" placeholder="" autofocus></textarea>
-
-
-          <script>
-            var editor = new Simditor({
-              textarea: $('#editor')
-              //optional options
-            });
-
-          </script>
 
 
 
