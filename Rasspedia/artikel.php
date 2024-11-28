@@ -89,7 +89,7 @@ $conn->close();
     <aside class="sidebar">
       <h2>Kategorien</h2>
       <ul>
-        <li><a href="#">Anti-Schwarzer Rassismus</a></li>
+        <li><a href="artikel.php?id=1">Anti-Schwarzer Rassismus</a></li>
         <li><a href="#">Anti-asiatischer Rassismus</a></li>
         <li><a href="#">Antisemitismus</a></li>
         <li><a href="#">Antimuslimischer Rassismus</a></li>
