@@ -296,6 +296,10 @@ footer {
   position: relative;
 }
 
+footer h1 {
+  font-size: 6rem;
+}
+
 footer::before {
   content: "";
   position: absolute;
