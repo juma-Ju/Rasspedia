@@ -63,16 +63,21 @@ $conn->close();
 ?>
 
 <html>
-    <style>
-        body{
-            background-color: #303030;
-            color: white;
-        }
-        a{
-            color: red;
-        }
-    </style>
-    <body>
-        <?php if (!empty($message)) { echo "<p>$message</p>"; } ?>
-    </body>
+<style>
+    body {
+        background-color: #303030;
+        color: white;
+    }
+
+    a {
+        color: red;
+    }
+</style>
+
+<body>
+    <?php if (!empty($message)) {
+        echo "<p>$message</p>";
+    } ?>
+</body>
+
 </html>

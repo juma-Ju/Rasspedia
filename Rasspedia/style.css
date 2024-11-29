@@ -36,7 +36,6 @@ body {
   font-size: calc(0.3 * var(--m));
 
   font-size: 16px;
-
 }
 
 /* Header */
@@ -65,7 +64,7 @@ nav {
   text-align: center;
   border: 2px solid #ffd700;
   border-radius: 0.8rem;
-  width: 50rem;
+  width: 55rem;
   margin: auto;
   z-index: 30;
 }
@@ -98,7 +97,7 @@ main {
   background: linear-gradient(120deg, #ff8064, #725bdc);
   width: 250px;
   padding: 2rem;
-  padding-left: .8rem;
+  padding-left: 0.8rem;
   border: 2px solid #6c48cf;
   border-radius: 0.8rem;
   font-size: 1.2em;
@@ -106,8 +105,8 @@ main {
   /* position: relative; */
   height: calc(100% - 1.6rem);
   z-index: 50;
-  top: .8rem;
-  left: .8rem;
+  top: 0.8rem;
+  left: 0.8rem;
   min-width: 150px;
   color: black;
 }
@@ -234,7 +233,7 @@ h3 {
 
   position: fixed;
   margin: calc(2 * var(--m)) calc(5 * var(--m)) calc(5 * var(--m))
-  calc(5 * var(--m));
+    calc(5 * var(--m));
 }
 
 button {
@@ -364,7 +363,6 @@ a {
   }
 }
 
-
 .glowing-btn {
   position: fixed;
   color: var(--glow-color);
@@ -448,7 +446,7 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  .glowing-btn{
+  .glowing-btn {
     font-size: 1em;
   }
 }

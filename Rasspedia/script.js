@@ -3,117 +3,114 @@
 //@Jannis Verschiedene Designs hinzufügen
 //Habe jetzt menü so gemacht, dass man nur einmal alt drückt und es offen bleibt(Aza)
 
-
 document.addEventListener("DOMContentLoaded", function () {
-    const weaponMenu = document.getElementById("weaponMenu");
-    weaponMenu.style.display = "none";
+  const weaponMenu = document.getElementById("weaponMenu");
+  weaponMenu.style.display = "none";
 
-    let isAltPressed = false;
+  let isAltPressed = false;
 
-
-    document.addEventListener("keydown", function (event) {
-        if (event.key === "Alt" && !isAltPressed) {
-            isAltPressed = true;
-            toggleWeaponMenu();
-        }
-    });
-
-
-    document.addEventListener("keyup", function (event) {
-        if (event.key === "Alt") {
-            isAltPressed = false;
-        }
-    });
-
-
-    function toggleWeaponMenu() {
-        if (weaponMenu.style.display === "none" || weaponMenu.style.display === "") {
-            weaponMenu.style.display = "grid";
-        } else {
-            weaponMenu.style.display = "none";
-        }
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Alt" && !isAltPressed) {
+      isAltPressed = true;
+      toggleWeaponMenu();
     }
-});
+  });
 
+  document.addEventListener("keyup", function (event) {
+    if (event.key === "Alt") {
+      isAltPressed = false;
+    }
+  });
+
+  function toggleWeaponMenu() {
+    if (
+      weaponMenu.style.display === "none" ||
+      weaponMenu.style.display === ""
+    ) {
+      weaponMenu.style.display = "grid";
+    } else {
+      weaponMenu.style.display = "none";
+    }
+  }
+});
 
 document.getElementById("startGameBtn").addEventListener("click", startGame);
 
 function startGame() {
-    document.getElementById("gameContainer").style.display = "block";
-    document.getElementById("startGameBtn").style.display = "none";
-    generateMemoryBoard();
+  document.getElementById("gameContainer").style.display = "block";
+  document.getElementById("startGameBtn").style.display = "none";
+  generateMemoryBoard();
 }
 
 function generateMemoryBoard() {
-    const memoryBoard = document.getElementById("memoryBoard");
-    memoryBoard.innerHTML = ""; // Board leeren
+  const memoryBoard = document.getElementById("memoryBoard");
+  memoryBoard.innerHTML = ""; // Board leeren
 
-    const cards = createCards();
-    shuffle(cards);
+  const cards = createCards();
+  shuffle(cards);
 
-    cards.forEach(card => {
-        const cardElement = document.createElement("div");
-        cardElement.classList.add("card");
-        cardElement.setAttribute("data-id", card.id);
-        cardElement.addEventListener("click", flipCard);
-        cardElement.dataset.flipped = false;
-        cardElement.textContent = card.value;
-        memoryBoard.appendChild(cardElement);
-    });
+  cards.forEach((card) => {
+    const cardElement = document.createElement("div");
+    cardElement.classList.add("card");
+    cardElement.setAttribute("data-id", card.id);
+    cardElement.addEventListener("click", flipCard);
+    cardElement.dataset.flipped = false;
+    cardElement.textContent = card.value;
+    memoryBoard.appendChild(cardElement);
+  });
 }
 
 function createCards() {
-    const values = ["A", "B", "C", "D", "E", "F", "G", "H"];
-    const cards = [...values, ...values]; // Doppelte Karten für das Spiel
-    return cards.map((value, index) => ({ id: index, value }));
+  const values = ["A", "B", "C", "D", "E", "F", "G", "H"];
+  const cards = [...values, ...values]; // Doppelte Karten für das Spiel
+  return cards.map((value, index) => ({ id: index, value }));
 }
 
 function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
 }
 
 let flippedCards = [];
 
 function flipCard(event) {
-    const card = event.target;
+  const card = event.target;
 
-    if (card.dataset.flipped === "true" || flippedCards.length === 2) {
-        return;
-    }
+  if (card.dataset.flipped === "true" || flippedCards.length === 2) {
+    return;
+  }
 
-    card.classList.add("flipped");
-    card.dataset.flipped = "true";
+  card.classList.add("flipped");
+  card.dataset.flipped = "true";
 
-    flippedCards.push(card);
+  flippedCards.push(card);
 
-    if (flippedCards.length === 2) {
-        checkMatch();
-    }
+  if (flippedCards.length === 2) {
+    checkMatch();
+  }
 }
 
 function checkMatch() {
-    const [firstCard, secondCard] = flippedCards;
+  const [firstCard, secondCard] = flippedCards;
 
-    if (firstCard.textContent === secondCard.textContent) {
-        flippedCards = [];
-    } else {
-        setTimeout(() => {
-            firstCard.classList.remove("flipped");
-            secondCard.classList.remove("flipped");
-            firstCard.dataset.flipped = "false";
-            secondCard.dataset.flipped = "false";
-            flippedCards = [];
-        }, 1000);
-    }
+  if (firstCard.textContent === secondCard.textContent) {
+    flippedCards = [];
+  } else {
+    setTimeout(() => {
+      firstCard.classList.remove("flipped");
+      secondCard.classList.remove("flipped");
+      firstCard.dataset.flipped = "false";
+      secondCard.dataset.flipped = "false";
+      flippedCards = [];
+    }, 1000);
+  }
 }
 
 document.getElementById("resetBtn").addEventListener("click", resetGame);
 
 function resetGame() {
-    document.getElementById("gameContainer").style.display = "none";
-    document.getElementById("startGameBtn").style.display = "block";
+  document.getElementById("gameContainer").style.display = "none";
+  document.getElementById("startGameBtn").style.display = "block";
 }
-

@@ -1,146 +1,167 @@
-
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rasspedia</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="erstellen.css" />
-    <link rel="stylesheet" type="text/css" href="simditor/site/assets/styles/simditor.css" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="simditor/site/assets/styles/simditor.css"
+    />
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="simditor/site/assets/scripts/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="simditor/site/assets/scripts/module.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="simditor/site/assets/scripts/hotkeys.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="simditor/site/assets/scripts/uploader.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="simditor/site/assets/scripts/simditor.js"
+    ></script>
 
-<script type="text/javascript" src="simditor/site/assets/scripts/jquery.min.js"></script>
-<script type="text/javascript" src="simditor/site/assets/scripts/module.js"></script>
-<script type="text/javascript" src="simditor/site/assets/scripts/hotkeys.js"></script>
-<script type="text/javascript" src="simditor/site/assets/scripts/uploader.js"></script>
-<script type="text/javascript" src="simditor/site/assets/scripts/simditor.js"></script>
+    <!-- Header -->
+    <header>
+      <a href="index.html">
+        <h1>Rasspedia</h1>
+        <p>Ein Projekt gegen Rassismus - Gelbe Hand Projekt</p>
+      </a>
+    </header>
 
-<!-- Header -->
-<header>
-    <h1>Rasspedia</h1>
-    <p>Ein Projekt gegen Rassismus - Gelbe Hand Projekt</p>
-</header>
-
-<!-- Sidebar -->
-<aside class="sidebar">
-    <h2>Kategorien</h2>
-    <ul>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Kategorien</h2>
+      <ul>
         <li><a href="artikel.php?id=1">Anti-Schwarzer Rassismus</a></li>
         <li><a href="#">Anti-asiatischer Rassismus</a></li>
         <li><a href="#">Antisemitismus</a></li>
         <li><a href="#">Antimuslimischer Rassismus</a></li>
         <li><a href="#">Anti-Indigener Rassismus</a></li>
         <li><a href="#">Anti-Roma-Rassismus (Antiziganismus)</a></li>
-        <li><a href="#">Rassismus gegenüber Menschen aus dem Nahen und Mittleren Osten</a></li>
+        <li>
+          <a href="#"
+            >Rassismus gegenüber Menschen aus dem Nahen und Mittleren Osten</a
+          >
+        </li>
         <li><a href="#">Rassismus gegen lateinamerikanische Menschen</a></li>
         <li><a href="#">Rassismus gegenüber anderen Gruppen</a></li>
-    </ul>
-</aside>
+      </ul>
+    </aside>
 
-<!-- Main Content -->
-<main>
-    <!-- Navigation -->
-    <nav>
+    <!-- Main Content -->
+    <main>
+      <!-- Navigation -->
+      <nav>
         <a href="index.html">Hauptseite</a>
         <a href="rassismus.html">Über Rassismus</a>
         <a href="artikelliste.php">Alle Artikel</a>
         <a href="erstellen.html">Neuer Artikel</a>
-    </nav>
+        <a href="games.html">Spiele</a>
+      </nav>
 
-    <!-- Content Area -->
-    <section class="content">
+      <!-- Content Area -->
+      <section class="content">
         <form method="post" action="create_article.php" id="article-form">
-            <label for="titel">Titel:</label>
-            <input type="text" id="titel" name="titel" required>
-            <br>
-            <br>
+          <label for="titel">Titel:</label>
+          <input type="text" id="titel" name="titel" required />
+          <br />
+          <br />
 
-            <label for="einfuerung">Einführung:</label>
-            <textarea id="einfuerung" name="einfuerung" required></textarea>
-            <br>
+          <label for="einfuerung">Einführung:</label>
+          <textarea id="einfuerung" name="einfuerung" required></textarea>
+          <br />
 
-            <label for="haupttext">Haupttext:</label>
-            <textarea id="haupttext" name="haupttext" required></textarea>
-            <br>
+          <label for="haupttext">Haupttext:</label>
+          <textarea id="haupttext" name="haupttext" required></textarea>
+          <br />
 
-            <label for="schluss">Schluss:</label>
-            <textarea id="schluss" name="schluss" required></textarea>
-            <br>
+          <label for="schluss">Schluss:</label>
+          <textarea id="schluss" name="schluss" required></textarea>
+          <br />
 
-            <label for="quellen">Quellen:</label>
-            <textarea id="quellen" name="quellen" required></textarea>
-            <br>
+          <label for="quellen">Quellen:</label>
+          <textarea id="quellen" name="quellen" required></textarea>
+          <br />
 
-            <label for="nuetzliches">Nützliches:</label>
-            <textarea id="nuetzliches" name="nuetzliches" required></textarea>
-            <br>
+          <label for="nuetzliches">Nützliches:</label>
+          <textarea id="nuetzliches" name="nuetzliches" required></textarea>
+          <br />
 
-            <label for="zeit">Zeit:</label>
-            <input type="datetime-local" id="zeit" name="zeit" required>
-            <br>
+          <label for="zeit">Zeit:</label>
+          <input type="datetime-local" id="zeit" name="zeit" required />
+          <br />
 
-            <label for="autor">Autor:</label>
-            <input type="text" id="autor" name="autor" required>
-            <br>
-            <br>
+          <label for="autor">Autor:</label>
+          <input type="text" id="autor" name="autor" required />
+          <br />
+          <br />
 
-            <button type="submit" name="submit">Speichern</button>
+          <button type="submit" name="submit">Speichern</button>
         </form>
 
         <script>
-            var editor2 = new Simditor({
-                textarea: $('#einfuerung')
-            });
-            var editor3 = new Simditor({
-                textarea: $('#haupttext')
-            });
-            var editor4 = new Simditor({
-                textarea: $('#schluss')
-            });
-            var editor5 = new Simditor({
-                textarea: $('#quellen')
-            });
-            var editor6 = new Simditor({
-                textarea: $('#nuetzliches')
-            });
+          var editor2 = new Simditor({
+            textarea: $("#einfuerung"),
+          });
+          var editor3 = new Simditor({
+            textarea: $("#haupttext"),
+          });
+          var editor4 = new Simditor({
+            textarea: $("#schluss"),
+          });
+          var editor5 = new Simditor({
+            textarea: $("#quellen"),
+          });
+          var editor6 = new Simditor({
+            textarea: $("#nuetzliches"),
+          });
         </script>
-    </section>
-</main>
+      </section>
+    </main>
 
-<footer id="footer">
-    <div class="col col1">
+    <footer id="footer">
+      <div class="col col1">
         <h3>Rasspedia</h3>
-        <p>Made with <span style="color: #BA6573;">❤</span> by E1IT1</p>
+        <p>Made with <span style="color: #ba6573">❤</span> by E1IT1</p>
         <div class="social"></div>
-        <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
-    </div>
-    <div class="col col2">
+        <p style="color: #818181; font-size: smaller">
+          2024 © All Rights Reserved
+        </p>
+      </div>
+      <div class="col col2">
         <p>XXX</p>
         <p>Kontakt</p>
         <p>Datenschutzerklärung</p>
         <p>Impressum</p>
-    </div>
-    <div class="col col3">
+      </div>
+      <div class="col col3">
         <h1>Rasspedia</h1>
-    </div>
-    <div class="backdrop"></div>
-</footer>
+      </div>
+      <div class="backdrop"></div>
+    </footer>
 
-<script>
-//     //Get form element
-//   var form=document.getElementById("article-form");
-//   function submitForm(event){
+    <script>
+      //     //Get form element
+      //   var form=document.getElementById("article-form");
+      //   function submitForm(event){
 
-//     //Preventing page refresh
-//     event.preventDefault();
-//   }
-
-</script>
-
-
-
-
-</body>
+      //     //Preventing page refresh
+      //     event.preventDefault();
+      //   }
+    </script>
+  </body>
 </html>
