@@ -1,0 +1,318 @@
+AWSTATS DATA FILE 7.9 (build 20230108)
+# If you remove this file, all statistics for date 202411 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2016                
+POS_TIME 2698                
+POS_VISITOR 8315                
+POS_DAY 8726                
+POS_DOMAIN 3342                
+POS_LOGIN 3615                
+POS_ROBOT 3770                
+POS_WORMS 4029                
+POS_EMAILSENDER 4160                
+POS_EMAILRECEIVER 4303                
+POS_SESSION 9037                
+POS_FILESIZE 9570                
+POS_SIDER 9234                
+POS_FILETYPES 4438                
+POS_DOWNLOADS 4598                
+POS_OS 4646                
+POS_BROWSER 4768                
+POS_SCREENSIZE 4931                
+POS_UNKNOWNREFERER 5005                
+POS_UNKNOWNREFERERBROWSER 5109                
+POS_ORIGIN 5208                
+POS_SEREFERRALS 5347                
+POS_PAGEREFS 5491                
+POS_SEARCHWORDS 5639                
+POS_KEYWORDS 5791                
+POS_MISC 2360                
+POS_ERRORS 5850                
+POS_CLUSTER 3471                
+POS_SIDER_404 5964                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20241203111436 3490 804769 11863102818942
+FirstTime 20241113091848
+LastTime 20241129170823
+LastUpdate 20241204014324 1 0 0 0 0
+TotalVisits 33                  
+TotalUnique 7                   
+MonthHostsKnown 4                   
+MonthHostsUnknown 3                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+FlashSupport 0 0 0
+DirectorSupport 0 0 0
+JavaEnabled 0 0 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+PDFSupport 0 0 0
+TotalMisc 0 0 0
+AddToFavourites 0 109 0
+QuickTimeSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 1 1 492
+1 0 0 0 1 1 8120
+2 0 0 0 0 0 0
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 0 0 0 2 2 16242
+6 0 0 0 0 0 0
+7 0 0 0 0 0 0
+8 12 27 179535 0 5 662879
+9 120 414 4173948 3 99 23865740
+10 157 344 2115715 9 149 21888358
+11 225 388 1698997 17 161 5125038
+12 51 91 322527 1 36 672226
+13 21 29 112009 0 10 1325954
+14 118 161 368510 72 211 2039031
+15 406 536 1043763 26 320 1357510
+16 198 385 1291529 4 110 15249657
+17 4 5 5404 0 2 0
+18 0 0 0 0 0 0
+19 0 0 0 0 0 0
+20 0 0 0 0 0 0
+21 0 0 0 0 0 0
+22 0 0 0 1 1 492
+23 0 0 0 1 1 492
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 4
+de 1297 2360 11268392
+net 10 14 36787
+ip 3 3 873
+com 2 3 5885
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 3
+XML[\x20]Sitemaps[\x20]Generator 8 20199 20241129112018 0
+custo 6 27065 20241127092908 0
+no_user_agent 3 8612 20241124054704 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 5
+js 421 5953098 0 0
+css 646 1905708 0 0
+php 939 1779664 0 0
+html 373 763847 0 0
+jpg 1 909620 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 4
+android10 2 2
+Unknown 2 1
+win10 2375 1308
+ios_iphone 1 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 6
+chrome125.0.6422.142 1 1
+Unknown 2 1
+chrome125.0.0.0 1 1
+chrome130.0.0.0 14 10
+safari 1 1
+firefox132.0 2361 1298
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+\ 20241129112019
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+\ 20241129112019
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 866 913
+From1 0 0
+From2 0 0
+From3 0 0
+From4 446 1467
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+404 420 80240
+403 1 199
+500 103 30686
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 29
+/simditor/site/assets/scripts/hotkeys.js 5 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/Paul.jpg 4 http://www.rasspedia.de.s1.kempf-solutions.de/
+/artikelliste.html 2 -
+/artikelliste.php 5 -
+/simditor/site/assets/scripts/uploader.js 6 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/style_detail.css 60 http://www.rasspedia.de.s1.kempf-solutions.de/artikelliste.php
+/games 1 -
+/hotkeys.js 10 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/land_background.jpg 1 http://www.rasspedia.de.s1.kempf-solutions.de/style_land.css
+/simditor.js 10 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/jquery.min.js 6 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/assets/styles/simditor.css 1 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/module.js 9 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/Alexander.jpg 4 http://www.rasspedia.de.s1.kempf-solutions.de/
+/simditor/site/assets/scripts/module.js 5 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/simditor/site/assets/styles/simditor.css 2 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/style_land.css 34 http://www.rasspedia.de.s1.kempf-solutions.de/artikelliste.php
+/robots.txt 1 -
+/Elias.jpg 4 http://www.rasspedia.de.s1.kempf-solutions.de/
+/artikelliste 1 -
+/Azamat.jpg 4 http://www.rasspedia.de.s1.kempf-solutions.de/
+/kursdetail.php 3 http://www.rasspedia.de.s1.kempf-solutions.de/artikelliste.php
+/simditor.css 16 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/simditor/site/assets/scripts/simditor.js 6 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/uploader.js 10 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/simditor/site/assets/scripts/jquery.min.js 3 http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+/artikel.php 5 http://www.rasspedia.de.s1.kempf-solutions.de/artikelliste.php
+/rassismus.css 12 http://www.rasspedia.de.s1.kempf-solutions.de/rassismus.html
+/arrow.png 190 http://www.rasspedia.de.s1.kempf-solutions.de/artikelliste.php
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 7
+office.kempf-solutions.de 1297 2360 11268392 20241129170823
+cust-5-10-9-4.pools.tk-bodensee.net 10 14 36787 20241119120418
+62.153.210.108 1 1 319 20241114131412
+pro4.pro-sitemaps.com 1 2 5566 20241129112019
+tmo-067-208.customers.d1-online.com 1 1 319 20241119113616
+40.94.95.17 1 1 235 20241113091949
+85.239.127.185 1 1 319 20241113094218
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 10
+20241113 142 145 1010412 5
+20241114 496 643 1068986 4
+20241115 51 82 313737 4
+20241119 11 15 37106 2
+20241120 91 184 454683 3
+20241121 210 366 828979 2
+20241122 58 277 2703565 2
+20241125 127 465 4150517 3
+20241128 53 77 288681 4
+20241129 73 126 455271 4
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+0s-30s 10
+15mn-30mn 5
+5mn-15mn 3
+1h+ 12
+30s-2mn 1
+30mn-1h 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 10
+/artikelliste.php 573 1071446 10 11
+/artikel.php 294 639615 2 5
+/ 290 665495 17 12
+/erstellen.php 46 64791 1 1
+/erstellen.html 39 37056 1 2
+/create_article.php 26 3812 1 0
+/rassismus.html 26 51919 0 1
+/test.html 12 8261 1 1
+/games.html 4 1116 0 0
+/Artikelliste.html 2 0 0 0
+END_SIDER
+
+# Payload Range - Payload Frequency
+BEGIN_FILESIZE 7
+0-44 190
+5K+ 419
+500-1K 33
+1K-2K 1281
+44-100 2
+100-500 1090
+2K-5K 474
+END_FILESIZE

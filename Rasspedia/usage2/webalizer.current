@@ -1,0 +1,189 @@
+# Webalizer V2.23-08 Incremental Data - 12/03/2024 12:29:12
+2024 12 3 12 29 12
+63 63 1 19 8 4 2308039 14 2 0
+1 4 62 3 3
+0 0 0 0 0 0
+0 0 0 0 0 0
+63 63 2308039 1 14 2
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+59 59 2302690 12
+4 4 5349 2
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0
+0
+0
+63
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/simditor/site/assets/scripts/simditor.js
+0 3 4 103227 0 0
+/games.html
+0 3 131 1155 0 0
+/artikel.php
+0 5 7381520071617556851 16185 0 0
+/rassismus.html
+0 2 8 6822 0 0
+/style.css
+0 3 4 6069 0 0
+/simditor/site/assets/scripts/hotkeys.js
+0 3 1 5616 0 0
+/simditor/site/assets/scripts/uploader.js
+0 3 11 6921 0 0
+/favicon.ico
+0 3 8 1988637 0 0
+/erstellen.html
+0 3 7381520071617556851 4467 0 0
+/rassismus.css
+0 2 4 2862 0 0
+/simditor/site/assets/styles/simditor.css
+0 3 1 31155 0 0
+/erstellen.css
+0 3 7381520071617556851 4374 0 0
+/artikelliste.css
+0 3 7381520071617556851 5991 0 0
+/artikelliste.php
+0 6 7381520071617556851 6306 0 0
+/simditor/site/assets/scripts/module.js
+0 3 1 3924 0 0
+/
+0 6 0 18034 4 2
+/simditor/site/assets/scripts/jquery.min.js
+0 3 1 92031 0 0
+/games.css
+0 3 4279946220764351776 1014 0 0
+/script.js
+0 3 7381520071617556851 3249 0 0
+# End Of Table - urls
+# -sites- (monthly)
+tk-bodensee.net
+2 63 63 2308039 2 1733228952
+/games.html
+cust-5-10-9-4.pools.tk-bodensee.net
+0 63 63 2308039 2 1733228952
+/games.html
+# End Of Table - sites (monthly)
+# -sites- (daily)
+cust-5-10-9-4.pools.tk-bodensee.net
+0 63 63 2308039 2 1733228952
+/games.html
+# End Of Table - sites (daily)
+# -referrers- 
+- (Direct Request)
+0 4
+http://www.rasspedia.de.s1.kempf-solutions.de/rassismus.html
+1 4
+http://www.rasspedia.de.s1.kempf-solutions.de/
+1 7
+http://www.rasspedia.de.s1.kempf-solutions.de/index.html
+1 5
+http://www.rasspedia.de.s1.kempf-solutions.de/artikelliste.php
+1 5
+http://www.rasspedia.de.s1.kempf-solutions.de/games.html
+1 6
+http://www.rasspedia.de.s1.kempf-solutions.de/erstellen.html
+1 28
+http://www.rasspedia.de.s1.kempf-solutions.de/artikel.php
+1 4
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+1 23
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+1 20
+Safari (OSX)
+2 43
+Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/131.0.6778.73 Mobile/
+1 1
+Internet Explorer 5.0
+2 20
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+1 19
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames
