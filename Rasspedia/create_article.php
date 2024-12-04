@@ -73,11 +73,9 @@ $conn->close();
         color: red;
     }
 </style>
-
 <body>
     <?php if (!empty($message)) {
         echo "<p>$message</p>";
     } ?>
 </body>
-
 </html>

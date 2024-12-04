@@ -102,9 +102,9 @@ $conn->close();
 
 
   <!-- <div class="card">
-      <h1>Rasspedia</h1><h2>Die Wissens-datenbank über Rassismus</h2>
-      <button><a href="#footer">Scroll</a></button>
-    </div> -->
+    <h1>Rasspedia</h1><h2>Die Wissens-datenbank über Rassismus</h2>
+    <button><a href="#footer">Scroll</a></button>
+  </div> -->
   <footer id="footer">
     <div class="col col1">
       <h3>Rasspedia</h3>
