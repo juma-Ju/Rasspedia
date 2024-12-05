@@ -26,10 +26,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit']) && !$saved) 
     $schluss = isset($_POST['schluss']) ? $conn->real_escape_string($_POST['schluss']) : '';
     $quellen = isset($_POST['quellen']) ? $conn->real_escape_string($_POST['quellen']) : '';
     $nuetzliches = isset($_POST['nuetzliches']) ? $conn->real_escape_string($_POST['nuetzliches']) : '';
-    $zeit = isset($_POST['zeit']) ? $conn->real_escape_string($_POST['zeit']) : '';
     $autor = isset($_POST['autor']) ? $conn->real_escape_string($_POST['autor']) : '';
 
-    if (!empty($titel) || !empty($einfuerung) || !empty($haupttext) || !empty($schluss) || !empty($quellen) || !empty($nuetzliches) || !empty($zeit) || !empty($autor)) {
+    // Set current local time
+    $zeit = date('Y-m-d H:i:s');
+
+    if (!empty($titel) || !empty($einfuerung) || !empty($haupttext) || !empty($schluss) || !empty($quellen) || !empty($nuetzliches) || !empty($autor)) {
         // Get the next ID value
         $sql = "SELECT MAX(id) AS max_id FROM artikel";
         $result = $conn->query($sql);
