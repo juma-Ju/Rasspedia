@@ -466,6 +466,10 @@ button {
   margin: 10px;
 }
 
+#gameContainer {
+ position: sticky;   /* Mit Thao besprechen warum es nicht geht */
+}
+
 #memoryBoard {
   display: grid;
   grid-template-columns: repeat(4, 100px);

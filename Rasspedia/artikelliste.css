@@ -168,6 +168,7 @@ main {
   grid-template-columns: repeat(5, 1fr); /* 5 items per row */
   gap: 1rem; /* Adjust spacing between items */
   padding: 2rem;
+  height: 100vh;
 }
 
 .artikelField {
@@ -191,11 +192,9 @@ main {
   transform: scale(1.05);
 }
 
-.artikelField span {
+.artikelField span { 
   font-weight: bold;
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  line-height: 1.2;
   white-space: normal; /* Allows text to wrap */
   word-break: break-word; /* Breaks long words to fit within the width */
   max-height: 5rem; /* Adjust this if you want to limit the number of rows */

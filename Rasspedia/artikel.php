@@ -157,7 +157,7 @@ $conn->close();
         </div>
 
         <div class="details">
-          <p><strong>Letzte Änderung:</strong> <?php echo htmlspecialchars($zeit); ?></p>
+          <p><strong>Erstellt:</strong> <?php echo htmlspecialchars($zeit); ?></p>
           <!-- <p><strong>Autor:</strong> <?php echo htmlspecialchars($autor); ?></p> -->
         </div>
 

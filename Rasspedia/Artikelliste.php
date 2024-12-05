@@ -86,7 +86,8 @@ $conn->close();
               </span>
 
               <p>
-                Zuletzt bearbeitet:
+                Erstellt:
+                <br>
                 <?php echo $rows['zeit']; ?>
               </p>
             </div>
