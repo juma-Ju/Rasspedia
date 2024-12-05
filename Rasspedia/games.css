@@ -46,7 +46,6 @@ header {
   text-align: center;
   display: block;
   width: 100%;
-  padding-left: 25.8rem;
   z-index: 30;
 }
 
@@ -89,69 +88,7 @@ main {
   /* display: flex; */
   margin: 0;
   width: 100%;
-  padding-left: 25.8rem;
   z-index: 30;
-}
-
-/* Sidebar */
-.sidebar {
-  background: linear-gradient(120deg, #ff8064, #725bdc);
-  width: 250px;
-  padding: 2rem;
-  padding-left: 0.8rem;
-  border: 2px solid #6c48cf;
-  border-radius: 0.8rem;
-  font-size: 1.2em;
-  position: fixed;
-  /* position: relative; */
-  height: calc(100% - 1.6rem);
-  z-index: 50;
-  top: 0.8rem;
-  left: 0.8rem;
-  min-width: 150px;
-  color: black;
-}
-
-.sidebar .spanline {
-  /* background-color: red; */
-  height: 10px;
-  width: 60px;
-}
-
-.sidebar h2 {
-  font-size: 2em;
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding-left: 1rem;
-}
-
-.sidebar ul li {
-  margin: 1rem 0;
-}
-
-.sidebar ul li a {
-  color: blue;
-  text-decoration: none;
-}
-
-.sidebar ul li a:hover {
-  text-decoration: underline;
-  color: #ffd700;
-}
-
-/* welcome */
-.welcome {
-  text-align: center;
-  margin: auto;
-  margin-top: 1.5rem;
-  /* background-color: #ffffff6b; */
-  border-radius: calc(0.5 * var(--m));
-  padding: 2rem;
-  width: 100%;
 }
 
 .content {
@@ -161,6 +98,7 @@ main {
   margin: auto;
   padding: 3rem;
   padding-bottom: 0;
+  height: 100vh;
 }
 
 .content p {
@@ -456,7 +394,6 @@ a {
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin: 20px;
 }
 
 button {
@@ -464,10 +401,6 @@ button {
   font-size: 16px;
   cursor: pointer;
   margin: 10px;
-}
-
-#gameContainer {
- position: sticky;   /* Mit Thao besprechen warum es nicht geht */
 }
 
 #memoryBoard {
