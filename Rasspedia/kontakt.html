@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Rasspedia</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        // Log to check if the page has loaded successfully
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Kontaktseite geladen");
+        });
+    </script>
+</head>
+<body>
+
+
+    <header>
+        <a href="index.html">
+            <h1>Rasspedia</h1>
+            <p>Ein Projekt gegen Rassismus - Gelbe Hand Projekt</p>
+        </a>
+    </header>
+
+    <main>
+        <nav>
+          <a href="index.html">Hauptseite</a>
+          <a href="rassismus.html">Über Rassismus</a>
+          <a href="artikelliste.php">Alle Artikel</a>
+          <a href="erstellen.html">Neuer Artikel</a>
+          <a href="games.html">Spiele</a>
+        </nav>
+    </main> 
+
+    <div class="contact-page">
+        <h1>Kontakt</h1>
+        <p>Wir freuen uns über Ihr Interesse an Rasspedia. Bei Fragen, Anmerkungen oder Anfragen können Sie uns über das folgende Formular erreichen:</p>
+        
+        <form action="/submit_contact" method="post" class="contact-form" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <script>console.log("Name-Feld erstellt");</script>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                <script>console.log("E-Mail-Feld erstellt");</script>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Betreff:</label>
+                <input type="text" id="subject" name="subject" required>
+                <script>console.log("Betreff-Feld erstellt");</script>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <script>console.log("Nachricht-Feld erstellt");</script>
+            </div>
+            
+            <button type="submit" class="contact-btn">Senden</button>
+            <script>console.log("Senden-Button erstellt");</script>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            console.log("Formular wird gesendet");
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let subject = document.getElementById("subject").value;
+            let message = document.getElementById("message").value;
+
+            if (!name || !email || !subject || !message) {
+                console.error("Validierungsfehler: Alle Felder müssen ausgefüllt werden");
+                return false;
+            }
+            console.log("Formular validiert erfolgreich");
+            return true;
+        }
+    </script>
+</body>
+</html>
+
+<style>
+    @import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
+    @import url("https://fonts.googleapis.com/css?family=Raleway");
+
+    :root {
+        --m: 4rem;
+        --glow-color: #ffd700;
+    }
+
+    body {
+        font-family: "IBM Plex Sans";
+        background-color: #303030;
+        color: #d5d5d5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: calc(0.3 * var(--m));
+    }
+
+    /* Header */
+    header {
+        background-color: #303030;
+        padding: 2rem;
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding-left: 0rem;
+        z-index: 30;
+    }
+
+    header p {
+        color: white;
+    }
+
+    header h1 {
+        font-size: 1.75em;
+        color: #ffd700;
+    }
+
+    /* Navigation */
+    nav {
+        padding: 1rem;
+        text-align: center;
+        border: 2px solid #ffd700;
+        border-radius: 0.8rem;
+        width: 55rem;
+        margin: auto;
+        z-index: 30;
+        margin-bottom: 5rem;
+    }
+
+    nav a {
+        margin: 0 1rem;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 0.95em;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        color: #ffd700;
+    }
+
+    /* Main Layout */
+    main {
+        position: relative;
+        background-color: #303030;
+        /* display: flex; */
+        margin: 0;
+        width: 100%;
+        padding-left: 0rem;
+        z-index: 30;
+    }
+
+    .contact-page {
+        background:  linear-gradient(120deg, #ff8064, #725bdc);;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        max-width: 600px;
+        width: 100%;
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+        color: #ffd700;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .contact-form {
+        margin-top: 2rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: #ffd700;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #6c48cf;
+        border-radius: 4px;
+        font-size: 1rem;
+        background-color: #505050;
+        color: #fff;
+    }
+
+    .contact-btn {
+        background-color: #ffd700;
+        color: #303030;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .contact-btn:hover {
+        background-color: #ffcc00;
+    }
+
+    .content {
+        border-radius: calc(0.5 * var(--m));
+        align-self: center;
+        width: 80%;
+        margin: auto;
+        padding: 3rem;
+        padding-bottom: 0;
+    }
+
+    .content p {
+        margin: 1rem 0;
+        color: white;
+    }
+
+    .content h4 {
+        font-size: 2rem;
+    }
+</style>
+
