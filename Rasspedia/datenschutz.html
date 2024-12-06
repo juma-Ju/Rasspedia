@@ -6,7 +6,6 @@
     <title>Datenschutz - Rasspedia</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        // Log to check if the page has loaded successfully
         document.addEventListener("DOMContentLoaded", function() {
             console.log("Datenschutzseite geladen");
         });
@@ -20,19 +19,23 @@
         </a>
     </header>
 
-    <main>
-        <nav>
-            <a href="index.html">Hauptseite</a>
-            <a href="rassismus.html">Über Rassismus</a>
-            <a href="artikelliste.php">Alle Artikel</a>
-            <a href="erstellen.html">Neuer Artikel</a>
-            <a href="games.html">Spiele</a>
-        </nav>
-    </main>
+    <nav>
+        <a href="index.html">Hauptseite</a>
+        <a href="rassismus.html">Über Rassismus</a>
+        <a href="artikelliste.php">Alle Artikel</a>
+        <a href="erstellen.html">Neuer Artikel</a>
+        <a href="games.html">Spiele</a>
+    </nav>
 
-    
-        <p>Wir bieten außerdem ein Kontaktformular auf unserer Webseite an, mit dem Sie uns direkt per E-Mail kontaktieren können. Die von Ihnen über das Kontaktformular eingegebenen Daten (wie Name, E-Mail-Adresse, Betreff und Nachricht) werden an unsere E-Mail-Adresse (mail.jannis.weber@gmail.com) gesendet und gespeichert, um Ihre Anfrage zu bearbeiten. Diese Daten werden nicht an Dritte weitergegeben.</p>
-    </div>
+    <main>
+        <div class="privacy-policy">
+            <h1>Datenschutzerklärung</h1>
+            <p>Der Schutz Ihrer persönlichen Daten ist uns sehr wichtig. Diese Datenschutzerklärung informiert Sie darüber, wie wir Ihre Daten auf unserer Webseite erfassen und verwenden.</p>
+            <p>Beim Besuch unserer Webseite werden automatisch einige technische Informationen erfasst, wie Ihre IP-Adresse und Browserinformationen. Diese Daten dienen lediglich der Verbesserung unserer Webseite und werden nicht dazu verwendet, Rückschlüsse auf Ihre Person zu ziehen.</p>
+            <p>Wir verwenden Google Fonts zur Darstellung von Schriftarten. Google Fonts ist ein Dienst der Google LLC. Beim Aufruf unserer Seite lädt Ihr Browser die benötigten Web Fonts in Ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen. Dabei wird Ihre IP-Adresse an Google übertragen. Weitere Informationen finden Sie in der <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.</p>
+            <p>Wir bieten außerdem ein Kontaktformular auf unserer Webseite an, mit dem Sie uns direkt per E-Mail kontaktieren können. Die von Ihnen über das Kontaktformular eingegebenen Daten (wie Name, E-Mail-Adresse, Betreff und Nachricht) werden an unsere E-Mail-Adresse (mail.jannis.weber@gmail.com) gesendet und gespeichert, um Ihre Anfrage zu bearbeiten. Diese Daten werden nicht an Dritte weitergegeben.</p>
+        </div>
+    </main>
 </body>
 </html>
 
@@ -41,21 +44,35 @@
     @import url("https://fonts.googleapis.com/css?family=Raleway");
 
     :root {
-        --m: 4rem;
-        --glow-color: #ffd700;
+    --m: 4rem;
+    --glow-color: #ffd700;
     }
 
+    html {
+    font-size: 62.5%; /* 1rem = 10px */
+    }
+
+    * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    }
+
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
     body {
         font-family: "IBM Plex Sans";
+        font-weight: 300;
         background-color: #303030;
         color: #d5d5d5;
         margin: 0;
         padding: 0;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        height: 100vh;
-        font-size: calc(0.3 * var(--m));
+        min-height: 100vh;
+        /* font-size: calc(0.3 * var(--m)); */
     }
 
     /* Header */
@@ -63,9 +80,7 @@
         background-color: #303030;
         padding: 2rem;
         text-align: center;
-        display: block;
         width: 100%;
-        padding-left: 0rem;
         z-index: 30;
     }
 
@@ -85,9 +100,8 @@
         border: 2px solid #ffd700;
         border-radius: 0.8rem;
         width: 55rem;
-        margin: auto;
+        margin: 1rem auto 2rem auto;
         z-index: 30;
-        margin-bottom: 5rem;
     }
 
     nav a {
@@ -106,10 +120,12 @@
     main {
         position: relative;
         background-color: #303030;
-        margin: 0;
         width: 100%;
-        padding-left: 0rem;
+        padding: 0;
         z-index: 30;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .privacy-policy {
@@ -120,6 +136,7 @@
         max-width: 600px;
         width: 100%;
         color: white;
+        margin: 3rem 0;
     }
 
     h1 {

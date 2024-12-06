@@ -2,7 +2,6 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-
 // Database credentials
 $servername = "localhost";
 $username = "rasspdbc";
@@ -29,12 +28,10 @@ $zeit = "";
 $autor = "";
 
 if ($id > 0) {
-
   $sql = "SELECT titel, einfuerung, haupttext, schluss, quellen, nuetzliches, zeit, autor FROM artikel WHERE id = $id";
   $result = $conn->query($sql);
 
   if ($result->num_rows > 0) {
-
     $row = $result->fetch_assoc();
     $titel = $row['titel'];
     $einfuerung = $row['einfuerung'];
@@ -55,17 +52,6 @@ if ($id > 0) {
 $sql = "SELECT * FROM artikel ORDER BY id ASC ";
 $result = $conn->query($sql);
 $conn->close();
-
-// echo "titel: " . $titel . "<br>";
-// echo "einfuerung: " . $einfuerung . "<br>";
-// echo "haupttext: " . $haupttext . "<br>";
-// echo "schluss: " . $schluss . "<br>";
-// echo "quellen: " . $quellen . "<br>";
-// echo "nuetzliches: " . $nuetzliches . "<br>";
-// echo "zeit: " . $zeit . "<br>";
-// echo "autor: " . $autor . "<br>";
-
-
 ?>
 
 <!DOCTYPE html>
@@ -120,7 +106,7 @@ $conn->close();
     <!-- Content Area -->
     <section class="content">
 
-      <div class="container">
+      <div class="container" id="printContainer">
 
         <h2>
           <?php echo $titel; ?>
@@ -161,25 +147,19 @@ $conn->close();
           <!-- <p><strong>Autor:</strong> <?php echo htmlspecialchars($autor); ?></p> -->
         </div>
 
-
-
+        <!-- Print Button -->
+        <button onclick="printArticle()">Diesen Artikel drucken</button>
 
       </div>
 
     </section>
   </main>
 
-
-  <!-- <div class="card">
-      <h1>Rasspedia</h1><h2>Die Wissens-datenbank über Rassismus</h2>
-      <button><a href="#footer">Scroll</a></button>
-    </div> -->
   <footer id="footer">
     <div class="col col1">
       <h3>Rasspedia</h3>
       <p>Made with <span style="color: #BA6573;">❤</span> by E1IT1</p>
       <div class="social">
-
       </div>
       <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
     </div>
@@ -194,6 +174,17 @@ $conn->close();
     </div>
     <div class="backdrop"></div>
   </footer>
+
+  <script>
+    function printArticle() {
+      const printContent = document.getElementById('printContainer').innerHTML;
+      const originalContent = document.body.innerHTML;
+      document.body.innerHTML = printContent;
+      window.print();
+      document.body.innerHTML = originalContent;
+    }
+  </script>
+
 </body>
 
 </html>

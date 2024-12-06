@@ -1,3 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+:root {
+  --m: 4rem;
+  --glow-color: #ffd700;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
     background-color: #303030;
     color: white;
@@ -14,37 +36,49 @@ body {
 }
 
 
+/* Header */
 header {
     background-color: #303030;
     padding: 2rem;
     text-align: center;
     display: block;
     width: 100%;
+    padding-left: 0rem;
     z-index: 30;
+}
+  
+header p {
+    color: white;
+}
+  
+header h1 {
+    font-size: 1.75em;
+    color: #ffd700;
 }
 
 
+/* Navigation */
 nav {
     padding: 1rem;
     text-align: center;
     border: 2px solid #ffd700;
     border-radius: 0.8rem;
-    width: 35rem;
+    width: 55rem;
     margin: auto;
     z-index: 30;
-  }
+}
   
-  nav a {
+nav a {
     margin: 0 1rem;
     color: #ffffff;
     text-decoration: none;
     font-size: 0.95em;
-  }
+}
   
-  nav a:hover {
+nav a:hover {
     text-decoration: underline;
     color: #ffd700;
-  }
+}
 
   
 header p {
