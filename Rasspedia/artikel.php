@@ -183,6 +183,12 @@ $conn->close();
       window.print();
       document.body.innerHTML = originalContent;
     }
+    document.addEventListener("DOMContentLoaded", function() {
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            window.location.href = "mobile.html";
+        }
+    });
   </script>
 
 </body>

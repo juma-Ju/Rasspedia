@@ -36,6 +36,14 @@
             <p>Wir bieten außerdem ein Kontaktformular auf unserer Webseite an, mit dem Sie uns direkt per E-Mail kontaktieren können. Die von Ihnen über das Kontaktformular eingegebenen Daten (wie Name, E-Mail-Adresse, Betreff und Nachricht) werden an unsere E-Mail-Adresse (mail.jannis.weber@gmail.com) gesendet und gespeichert, um Ihre Anfrage zu bearbeiten. Diese Daten werden nicht an Dritte weitergegeben.</p>
         </div>
     </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                window.location.href = "mobile.html";
+            }
+        });
+    </script>
 </body>
 </html>
 
@@ -129,7 +137,7 @@
     }
 
     .privacy-policy {
-        background: linear-gradient(120deg, #ff8064, #725bdc);
+        background: #303030;
         padding: 2rem;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);

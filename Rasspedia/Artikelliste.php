@@ -126,6 +126,14 @@ $conn->close();
     </div>
     <div class="backdrop"></div>
   </footer>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+          if (isMobile) {
+              window.location.href = "mobile.html";
+          }
+      });
+  </script>
 </body>
 
 </html>

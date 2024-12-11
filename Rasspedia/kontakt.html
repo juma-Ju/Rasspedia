@@ -82,6 +82,12 @@
             console.log("Formular validiert erfolgreich");
             return true;
         }
+        document.addEventListener("DOMContentLoaded", function() {
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                window.location.href = "mobile.html";
+            }
+        });
     </script>
 </body>
 </html>
