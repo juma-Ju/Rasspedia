@@ -136,7 +136,7 @@ $conn->close();
           <?php echo $quellen; ?>
         </div>
 
-        <h3>Nützliches:</h3>
+        <!-- <h3>Nützliches:</h3> -->
 
         <div class="haupttext">
           <?php echo $nuetzliches; ?>
@@ -156,24 +156,21 @@ $conn->close();
   </main>
 
   <footer id="footer">
-    <div class="col col1">
-      <h3>Rasspedia</h3>
-      <p>Made with <span style="color: #BA6573;">❤</span> by E1IT1</p>
-      <div class="social">
+      <div class="col col1">
+        <h3>Rasspedia</h3>
+        <p>Made with <span style="color: #ba6573">❤</span> by E1IT1</p>
+        <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
       </div>
-      <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
-    </div>
-    <div class="col col2">
-      <p>XXX</p>
-      <p>Kontakt</p>
-      <p>Datenschutzerklärung</p>
-      <p>Impressum</p>
-    </div>
-    <div class="col col3">
-      <h1>Rasspedia</h1>
-    </div>
-    <div class="backdrop"></div>
-  </footer>
+      <div class="col col2">
+        <a href="kontakt.html" class="contact-link">Kontakt</a>
+        <br>
+        <br>
+        <a href="datenschutz.html" class="contact-link">Datenschutzerklärung</a>
+        <br>
+        <br>
+        <a href="impressum.html" class="contact-link">Impressum</a>
+      </div>
+    </footer>
 
   <script>
     function printArticle() {
