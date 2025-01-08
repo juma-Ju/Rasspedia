@@ -80,8 +80,8 @@ $conn->close();
     <h2>Kategorien</h2>
     <ul>
       <li><a href="artikel.php?id=1">Anti-Schwarzer Rassismus</a></li>
-      <li><a href="#">Anti-asiatischer Rassismus</a></li>
-      <li><a href="#">Antisemitismus</a></li>
+      <li><a href="artikel.php?id=2">Anti-asiatischer Rassismus</a></li>
+      <li><a href="artikel.php?id=3">Antisemitismus</a></li>
       <li><a href="#">Antimuslimischer Rassismus</a></li>
       <li><a href="#">Anti-Indigener Rassismus</a></li>
       <li><a href="#">Anti-Roma-Rassismus (Antiziganismus)</a></li>
@@ -100,7 +100,7 @@ $conn->close();
       <a href="rassismus.html">Über Rassismus</a>
       <a href="artikelliste.php">Alle Artikel</a>
       <a href="erstellen.html">Neuer Artikel</a>
-      <a href="games.html">Spiele</a>
+      <a href="gamessta.html">Spiele</a>
     </nav>
 
     <!-- Content Area -->

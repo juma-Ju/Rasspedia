@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Rasspedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1>Rasspedia</h1>
+            <p>Ein Projekt gegen Rassismus - Gelbe Hand Projekt</p>
+        </a>
+    </header>
+
+    <main>
+        <nav>
+            <a href="index.html">Hauptseite</a>
+            <a href="rassismus.html">Über Rassismus</a>
+            <a href="artikelliste.php">Alle Artikel</a>
+            <a href="erstellen.html">Neuer Artikel</a>
+            <a href="games.html">Spiele</a>
+        </nav>
+
+        <div class="impressum">
+            <h1>Impressum</h1>
+
+            <p><strong>Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV:</strong></p>
+            <p>Rasspedia<br>
+            E-Mail: <a href="mailto:info@rasspedia">info@rasspedia</a></p>
+
+            <p>Rasspedia ist ein privates Schulprojekt und dient ausschließlich der nichtkommerziellen Bildungsarbeit.</p>
+
+            <h2>Haftungsausschluss</h2>
+            <p>Die Inhalte dieser Webseite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+
+            <h2>Urheberrecht</h2>
+            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Webseite unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+
+            <h2>Kontaktaufnahme</h2>
+            <p>Bei Fragen oder Anliegen wenden Sie sich bitte an die oben angegebene E-Mail-Adresse.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>2024 © Rasspedia - Alle Rechte vorbehalten</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<style>
+    @import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
+
+    :root {
+        --m: 4rem;
+        --glow-color: #ffd700;
+    }
+
+    body {
+        font-family: "IBM Plex Sans";
+        background-color: #303030;
+        color: #d5d5d5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        background-color: #303030;
+        padding: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        color: #ffd700;
+    }
+
+    header p {
+        color: white;
+    }
+
+    nav {
+        padding: 1rem;
+        text-align: center;
+        border: 2px solid #ffd700;
+        border-radius: 0.8rem;
+        width: 60%;
+        margin: 1rem auto;
+    }
+
+    nav a {
+        margin: 0 1rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        color: #ffd700;
+    }
+
+    .impressum {
+        background: linear-gradient(120deg, #ff8064, #725bdc);
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        max-width: 800px;
+        width: 90%;
+        color: white;
+        margin: 2rem auto;
+    }
+
+    h1 {
+        text-align: center;
+        color: #ffd700;
+        font-family: "IBM Plex Sans";
+    }
+
+    h2 {
+        color: #ffd700;
+        margin-top: 1.5rem;
+    }
+
+    a {
+        color: #ffd700;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        background-color: #202020;
+        color: #d5d5d5;
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    footer .footer-content {
+        font-size: 0.9rem;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Rasspedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1>Rasspedia</h1>
+            <p>Ein Projekt gegen Rassismus - Gelbe Hand Projekt</p>
+        </a>
+    </header>
+
+    <main>
+        <nav>
+            <a href="index.html">Hauptseite</a>
+            <a href="rassismus.html">Über Rassismus</a>
+            <a href="artikelliste.php">Alle Artikel</a>
+            <a href="erstellen.html">Neuer Artikel</a>
+            <a href="games.html">Spiele</a>
+        </nav>
+
+        <div class="impressum">
+            <h1>Impressum</h1>
+
+            <p><strong>Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV:</strong></p>
+            <p>Rasspedia<br>
+            E-Mail: <a href="mailto:info@rasspedia">info@rasspedia</a></p>
+
+            <p>Rasspedia ist ein privates Schulprojekt und dient ausschließlich der nichtkommerziellen Bildungsarbeit.</p>
+
+            <h2>Haftungsausschluss</h2>
+            <p>Die Inhalte dieser Webseite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+
+            <h2>Urheberrecht</h2>
+            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Webseite unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+
+            <h2>Kontaktaufnahme</h2>
+            <p>Bei Fragen oder Anliegen wenden Sie sich bitte an die oben angegebene E-Mail-Adresse.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>2024 © Rasspedia - Alle Rechte vorbehalten</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<style>
+    @import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
+
+    :root {
+        --m: 4rem;
+        --glow-color: #ffd700;
+    }
+
+    body {
+        font-family: "IBM Plex Sans";
+        background-color: #303030;
+        color: #d5d5d5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        background-color: #303030;
+        padding: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        color: #ffd700;
+    }
+
+    header p {
+        color: white;
+    }
+
+    nav {
+        padding: 1rem;
+        text-align: center;
+        border: 2px solid #ffd700;
+        border-radius: 0.8rem;
+        width: 60%;
+        margin: 1rem auto;
+    }
+
+    nav a {
+        margin: 0 1rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        color: #ffd700;
+    }
+
+    .impressum {
+        background: linear-gradient(120deg, #ff8064, #725bdc);
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        max-width: 800px;
+        width: 90%;
+        color: white;
+        margin: 2rem auto;
+    }
+
+    h1 {
+        text-align: center;
+        color: #ffd700;
+        font-family: "IBM Plex Sans";
+    }
+
+    h2 {
+        color: #ffd700;
+        margin-top: 1.5rem;
+    }
+
+    a {
+        color: #ffd700;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        background-color: #202020;
+        color: #d5d5d5;
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    footer .footer-content {
+        font-size: 0.9rem;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Rasspedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1>Rasspedia</h1>
+            <p>Ein Projekt gegen Rassismus - Gelbe Hand Projekt</p>
+        </a>
+    </header>
+
+    <main>
+        <nav>
+            <a href="index.html">Hauptseite</a>
+            <a href="rassismus.html">Über Rassismus</a>
+            <a href="artikelliste.php">Alle Artikel</a>
+            <a href="erstellen.html">Neuer Artikel</a>
+            <a href="games.html">Spiele</a>
+        </nav>
+
+        <div class="impressum">
+            <h1>Impressum</h1>
+
+            <p><strong>Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV:</strong></p>
+            <p>Rasspedia<br>
+            E-Mail: <a href="mailto:info@rasspedia">info@rasspedia</a></p>
+
+            <p>Rasspedia ist ein privates Schulprojekt und dient ausschließlich der nichtkommerziellen Bildungsarbeit.</p>
+
+            <h2>Haftungsausschluss</h2>
+            <p>Die Inhalte dieser Webseite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+
+            <h2>Urheberrecht</h2>
+            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Webseite unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+
+            <h2>Kontaktaufnahme</h2>
+            <p>Bei Fragen oder Anliegen wenden Sie sich bitte an die oben angegebene E-Mail-Adresse.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>2024 © Rasspedia - Alle Rechte vorbehalten</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<style>
+    @import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
+
+    :root {
+        --m: 4rem;
+        --glow-color: #ffd700;
+    }
+
+    body {
+        font-family: "IBM Plex Sans";
+        background-color: #303030;
+        color: #d5d5d5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        background-color: #303030;
+        padding: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        color: #ffd700;
+    }
+
+    header p {
+        color: white;
+    }
+
+    nav {
+        padding: 1rem;
+        text-align: center;
+        border: 2px solid #ffd700;
+        border-radius: 0.8rem;
+        width: 60%;
+        margin: 1rem auto;
+    }
+
+    nav a {
+        margin: 0 1rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        color: #ffd700;
+    }
+
+    .impressum {
+        background: linear-gradient(120deg, #ff8064, #725bdc);
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        max-width: 800px;
+        width: 90%;
+        color: white;
+        margin: 2rem auto;
+    }
+
+    h1 {
+        text-align: center;
+        color: #ffd700;
+        font-family: "IBM Plex Sans";
+    }
+
+    h2 {
+        color: #ffd700;
+        margin-top: 1.5rem;
+    }
+
+    a {
+        color: #ffd700;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        background-color: #202020;
+        color: #d5d5d5;
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    footer .footer-content {
+        font-size: 0.9rem;
+    }
+</style>

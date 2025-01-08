@@ -1,70 +1,89 @@
 const board = document.getElementById('game-board');
 const restartButton = document.getElementById('restart-btn');
-const cardValues = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+
+// Jedes Bild hat den passenden Text als Paar
+const cardValues = [
+    { type: 'image', value: 'Angela_Davis', src: 'Bilder/Angela_Davis.jpg' },
+    { type: 'text', value: 'Angela_Davis', text: 'Angela Davis - Bürgerrechtlerin' },
+    { type: 'image', value: 'Berthold_Brecht', src: 'Bilder/Berthold_Brecht.jpg' },
+    { type: 'text', value: 'Berthold_Brecht', text: 'Berthold Brecht - Dramatiker und Dichter' },
+    { type: 'image', value: 'Emmiline_Pankhurst', src: 'Bilder/Emmiline_Pankhurst.jpg' },
+    { type: 'text', value: 'Emmiline_Pankhurst', text: 'Emmeline Pankhurst - Suffragetten-führerin' },
+    { type: 'image', value: 'Mahatma_Ghandi', src: 'Bilder/Mahatma_Ghandi.jpg' },
+    { type: 'text', value: 'Mahatma_Ghandi', text: 'Mahatma Gandhi - Führer der indischen Unabhängigkeit' },
+    { type: 'image', value: 'Malcom_X', src: 'Bilder/Malcom_X.jpg' },
+    { type: 'text', value: 'Malcom_X', text: 'Malcolm X - Menschenrecht-saktivist' },
+    { type: 'image', value: 'Martin_Luther_King', src: 'Bilder/Martin_Luther_King.jpg' },
+    { type: 'text', value: 'Martin_Luther_King', text: 'Martin Luther King - Bürgerrechtsführer' },
+    { type: 'image', value: 'Nelson_Mandela', src: 'Bilder/Nelson_Mandela.jpg' },
+    { type: 'text', value: 'Nelson_Mandela', text: 'Nelson Mandela - Anti-Apartheid-Revolutionär' },
+    { type: 'image', value: 'Rosa_parks', src: 'Bilder/Rosa_parks.jpg' },
+    { type: 'text', value: 'Rosa_parks', text: 'Rosa Parks - Mutter der Bürgerrechts-bewegung' }
+];
 
 let cards = [];
 let flippedCards = [];
 let matchedCards = 0;
 
-
 function startGame() {
-
     const shuffledValues = shuffle(cardValues);
 
-   
     board.innerHTML = '';
 
-    // Karten erstellen
     cards = [];
     matchedCards = 0;
     flippedCards = [];
-    shuffledValues.forEach((value, index) => {
+
+    shuffledValues.forEach((item, index) => {
         const card = document.createElement('div');
         card.classList.add('card');
         card.setAttribute('data-id', index);
-        card.setAttribute('data-value', value);
-        card.textContent = value;
+        card.setAttribute('data-value', item.value);
+
+        if (item.type === 'image') {
+            card.style.backgroundImage = `url('${item.src}')`;
+            card.style.backgroundSize = 'cover';
+            card.style.backgroundPosition = 'center';
+        } else if (item.type === 'text') {
+            card.textContent = item.text;
+            card.style.backgroundColor = '#ddd';
+            card.style.color = '#333';
+            card.style.padding = '10px';
+            card.style.fontSize = '12px';
+            card.style.textAlign = 'center';
+        }
+
         card.addEventListener('click', flipCard);
         board.appendChild(card);
         cards.push(card);
     });
 }
 
-// Funktion zum Mischen der Karten
 function shuffle(array) {
     return array.sort(() => Math.random() - 0.5);
 }
 
-// Funktion, um eine Karte umzudrehen und eine andere Farbe zu geben
 function flipCard(event) {
     const card = event.target;
-
 
     if (card.classList.contains('flipped') || card.classList.contains('matched')) {
         return;
     }
 
-    // Karte umdrehen und Farbe ändern
     card.classList.add('flipped');
-    card.style.backgroundColor = '#f0f0f0';  
     flippedCards.push(card);
 
-    
     if (flippedCards.length === 2) {
         checkMatch();
     }
 }
 
-// Überprüfen, ob die umgedrehten Karten ein Paar sind
 function checkMatch() {
     const [card1, card2] = flippedCards;
 
     if (card1.getAttribute('data-value') === card2.getAttribute('data-value')) {
-        
         card1.classList.add('matched');
         card2.classList.add('matched');
-        card1.style.backgroundColor = '#00ff00';
-        card2.style.backgroundColor = '#00ff00'; 
         matchedCards++;
 
         if (matchedCards === 8) {
@@ -72,20 +91,15 @@ function checkMatch() {
             startGame();
         }
     } else {
-
         setTimeout(() => {
             card1.classList.remove('flipped');
             card2.classList.remove('flipped');
-            card1.style.backgroundColor = ''; 
-            card2.style.backgroundColor = ''; 
         }, 1000);
     }
 
     flippedCards = [];
 }
 
-// Neustart-Button
 restartButton.addEventListener('click', startGame);
 
-// Spiel starten
 startGame();

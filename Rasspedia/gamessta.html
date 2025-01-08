@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Spiel</title>
     <link rel="stylesheet" href="games.css">
+
+
+    <style>
+  
+
+        .button-container {
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -22,13 +49,17 @@
             <a href="rassismus.html">Über Rassismus</a>
             <a href="artikelliste.php">Alle Artikel</a>
             <a href="erstellen.html">Neuer Artikel</a>
-            <a href="games.html">Spiele</a>
+            <a href="gamessta.html">Spiele</a>
         </nav>
 
 
-        <h1>Memory Spiel</h1>
-        <div id="game-board"></div>
-        <button id="restart-btn">Neustart</button>
+
+        <h2>Wähle deine nächste Aktion:</h2>
+        <div class="button-container">
+            <a href="games2.html">Zum Fragebogen</a>
+            <a href="games.html">Memory</a>
+        </div>
+
         
 
         <script src="scriptgame.js"></script>

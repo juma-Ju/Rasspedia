@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schachspiel</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 60px);
+            grid-template-rows: repeat(8, 60px);
+            border: 2px solid #333;
+        }
+
+        .chessboard div {
+            width: 60px;
+            height: 60px;
+            position: relative;
+        }
+
+        .black {
+            background-color: #769656;
+        }
+
+        .white {
+            background-color: #eeeed2;
+        }
+
+        .piece {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            cursor: grab;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .piece:active {
+            cursor: grabbing;
+        }
+    </style>
+</head>
+<body>
+    <div class="chessboard" id="chessboard"></div>
+
+    <script>
+        const chessboard = document.querySelector('#chessboard');
+
+        const pieces = {
+            P: '&#9817;', // White Pawn
+            R: '&#9814;', // White Rook
+            N: '&#9816;', // White Knight
+            B: '&#9815;', // White Bishop
+            Q: '&#9813;', // White Queen
+            K: '&#9812;', // White King
+            p: '&#9823;', // Black Pawn
+            r: '&#9820;', // Black Rook
+            n: '&#9822;', // Black Knight
+            b: '&#9821;', // Black Bishop
+            q: '&#9819;', // Black Queen
+            k: '&#9818;'  // Black King
+        };
+
+        let selectedPiece = null;
+        let selectedSquare = null;
+
+        // Initial board setup
+        const initialBoard = [
+            'rnbqkbnr',
+            'pppppppp',
+            '        ',
+            '        ',
+            '        ',
+            '        ',
+            'PPPPPPPP',
+            'RNBQKBNR'
+        ];
+
+        const boardState = initialBoard.map(row => row.split(''));
+
+        function renderBoard() {
+            chessboard.innerHTML = '';
+            boardState.forEach((row, rowIndex) => {
+                row.forEach((cell, colIndex) => {
+                    const square = document.createElement('div');
+                    const isBlack = (rowIndex + colIndex) % 2 === 1;
+                    square.className = isBlack ? 'black' : 'white';
+                    square.dataset.row = rowIndex;
+                    square.dataset.col = colIndex;
+
+                    if (pieces[cell]) {
+                        const pieceElement = document.createElement('div');
+                        pieceElement.className = 'piece';
+                        pieceElement.innerHTML = pieces[cell];
+                        pieceElement.dataset.piece = cell;
+                        pieceElement.draggable = true;
+
+                        pieceElement.addEventListener('dragstart', (e) => {
+                            selectedPiece = e.target.dataset.piece;
+                            selectedSquare = { row: rowIndex, col: colIndex };
+                        });
+
+                        square.appendChild(pieceElement);
+                    }
+
+                    square.addEventListener('dragover', (e) => {
+                        e.preventDefault();
+                    });
+
+                    square.addEventListener('drop', (e) => {
+                        const targetRow = parseInt(e.target.dataset.row);
+                        const targetCol = parseInt(e.target.dataset.col);
+
+                        if (isValidMove(selectedSquare, { row: targetRow, col: targetCol })) {
+                            boardState[targetRow][targetCol] = selectedPiece;
+                            boardState[selectedSquare.row][selectedSquare.col] = ' ';
+                            renderBoard();
+                        }
+                    });
+
+                    chessboard.appendChild(square);
+                });
+            });
+        }
+
+        function isValidMove(from, to) {
+            const piece = boardState[from.row][from.col];
+            const target = boardState[to.row][to.col];
+
+            // Ensure the target square is not occupied by the same color
+            if (isSameColor(piece, target)) return false;
+
+            switch (piece.toLowerCase()) {
+                case 'p': // Pawn
+                    return isValidPawnMove(from, to, piece);
+                case 'r': // Rook
+                    return isValidRookMove(from, to);
+                case 'n': // Knight
+                    return isValidKnightMove(from, to);
+                case 'b': // Bishop
+                    return isValidBishopMove(from, to);
+                case 'q': // Queen
+                    return isValidQueenMove(from, to);
+                case 'k': // King
+                    return isValidKingMove(from, to);
+                default:
+                    return false;
+            }
+        }
+
+        function isSameColor(piece, target) {
+            if (!piece.trim() || !target.trim()) return false;
+            const isWhite = piece === piece.toUpperCase();
+            const isTargetWhite = target === target.toUpperCase();
+            return isWhite === isTargetWhite;
+        }
+
+        function isValidPawnMove(from, to, piece) {
+            const direction = piece === 'P' ? -1 : 1; // White moves up (-1), Black moves down (+1)
+            const startRow = piece === 'P' ? 6 : 1;
+
+            if (to.col === from.col) {
+                // Moving forward
+                if (to.row === from.row + direction && boardState[to.row][to.col] === ' ') {
+                    return true;
+                }
+                // Double move from starting position
+                if (from.row === startRow && to.row === from.row + 2 * direction && boardState[to.row][to.col] === ' ' && boardState[from.row + direction][to.col] === ' ') {
+                    return true;
+                }
+            } else if (Math.abs(to.col - from.col) === 1 && to.row === from.row + direction) {
+                // Capturing diagonally
+                return boardState[to.row][to.col] !== ' ';
+            }
+
+            return false;
+        }
+
+        function isValidRookMove(from, to) {
+            if (from.row !== to.row && from.col !== to.col) return false;
+            return isPathClear(from, to);
+        }
+
+        function isValidKnightMove(from, to) {
+            const rowDiff = Math.abs(from.row - to.row);
+            const colDiff = Math.abs(from.col - to.col);
+            return (rowDiff === 2 && colDiff === 1) || (rowDiff === 1 && colDiff === 2);
+        }
+
+        function isValidBishopMove(from, to) {
+            if (Math.abs(from.row - to.row) !== Math.abs(from.col - to.col)) return false;
+            return isPathClear(from, to);
+        }
+
+        function isValidQueenMove(from, to) {
+            return isValidRookMove(from, to) || isValidBishopMove(from, to);
+        }
+
+        function isValidKingMove(from, to) {
+            const rowDiff = Math.abs(from.row - to.row);
+            const colDiff = Math.abs(from.col - to.col);
+            return rowDiff <= 1 && colDiff <= 1;
+        }
+
+        function isPathClear(from, to) {
+            const rowStep = Math.sign(to.row - from.row);
+            const colStep = Math.sign(to.col - from.col);
+            let currentRow = from.row + rowStep;
+            let currentCol = from.col + colStep;
+
+            while (currentRow !== to.row || currentCol !== to.col) {
+                if (boardState[currentRow][currentCol] !== ' ') return false;
+                currentRow += rowStep;
+                currentCol += colStep;
+            }
+
+            return true;
+        }
+
+        renderBoard();
+    </script>
+</body>
+</html>

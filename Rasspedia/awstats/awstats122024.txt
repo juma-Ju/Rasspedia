@@ -9,33 +9,33 @@ AWSTATS DATA FILE 7.9 (build 20230108)
 BEGIN_MAP 28
 POS_GENERAL 2016                
 POS_TIME 2698                
-POS_VISITOR 3364                
-POS_DAY 3527                
-POS_DOMAIN 3675                
-POS_LOGIN 3903                
-POS_ROBOT 4058                
-POS_WORMS 4190                
-POS_EMAILSENDER 4321                
-POS_EMAILRECEIVER 4464                
-POS_SESSION 4540                
-POS_FILESIZE 6256                
-POS_SIDER 4677                
-POS_FILETYPES 4941                
-POS_DOWNLOADS 5074                
-POS_OS 5122                
-POS_BROWSER 5214                
-POS_SCREENSIZE 5315                
-POS_UNKNOWNREFERER 5389                
-POS_UNKNOWNREFERERBROWSER 5476                
-POS_ORIGIN 5558                
-POS_SEREFERRALS 5690                
-POS_PAGEREFS 5834                
-POS_SEARCHWORDS 5982                
-POS_KEYWORDS 6134                
-POS_MISC 2362                
-POS_ERRORS 6193                
-POS_CLUSTER 3759                
-POS_SIDER_404 6371                
+POS_VISITOR 7773                
+POS_DAY 8716                
+POS_DOMAIN 3381                
+POS_LOGIN 3661                
+POS_ROBOT 3816                
+POS_WORMS 4018                
+POS_EMAILSENDER 4149                
+POS_EMAILRECEIVER 4292                
+POS_SESSION 9213                
+POS_FILESIZE 9970                
+POS_SIDER 9420                
+POS_FILETYPES 4427                
+POS_DOWNLOADS 4608                
+POS_OS 4656                
+POS_BROWSER 4872                
+POS_SCREENSIZE 5195                
+POS_UNKNOWNREFERER 5269                
+POS_UNKNOWNREFERERBROWSER 5356                
+POS_ORIGIN 5438                
+POS_SEREFERRALS 5577                
+POS_PAGEREFS 5721                
+POS_SEARCHWORDS 5869                
+POS_KEYWORDS 6021                
+POS_MISC 2360                
+POS_ERRORS 6080                
+POS_CLUSTER 3517                
+POS_SIDER_404 6181                
 END_MAP
 
 # LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
@@ -47,33 +47,33 @@ END_MAP
 # MonthHostsKnown   = Number of hosts known
 # MonthHostsUnKnown = Number of hosts unknown
 BEGIN_GENERAL 8
-LastLine 20241203122912 3552 822253 17845958866713
+LastLine 20250102111719 6227 1477814 8571348688502
 FirstTime 20241203111436
-LastTime 20241203122912
-LastUpdate 20241204014324 63 0 63 0 0
-TotalVisits 1                   
-TotalUnique 1                   
-MonthHostsKnown 1                   
-MonthHostsUnknown 0                   
+LastTime 20241231001635
+LastUpdate 20250103013908 1 0 0 0 0
+TotalVisits 46                  
+TotalUnique 16                  
+MonthHostsKnown 9                   
+MonthHostsUnknown 9                   
 END_GENERAL
 
 # Misc ID - Pages - Hits - Bandwidth
 BEGIN_MISC 10
-FlashSupport 0 0 0
-DirectorSupport 0 0 0
-JavaEnabled 0 0 0
-RealPlayerSupport 0 0 0
+QuickTimeSupport 0 0 0
 JavascriptDisabled 0 0 0
+FlashSupport 0 0 0
 WindowsMediaPlayerSupport 0 0 0
 PDFSupport 0 0 0
 TotalMisc 0 0 0
-AddToFavourites 0 3 0
-QuickTimeSupport 0 0 0
+DirectorSupport 0 0 0
+AddToFavourites 0 341 0
+RealPlayerSupport 0 0 0
+JavaEnabled 0 0 0
 END_MISC
 
 # Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
 BEGIN_TIME 24
-0 0 0 0 0 0 0
+0 1 1 3494 0 0 0
 1 0 0 0 0 0 0
 2 0 0 0 0 0 0
 3 0 0 0 0 0 0
@@ -81,40 +81,31 @@ BEGIN_TIME 24
 5 0 0 0 0 0 0
 6 0 0 0 0 0 0
 7 0 0 0 0 0 0
-8 0 0 0 0 0 0
-9 0 0 0 0 0 0
-10 0 0 0 0 0 0
-11 23 56 314053 0 3 1988637
-12 2 4 5349 0 0 0
-13 0 0 0 0 0 0
-14 0 0 0 0 0 0
-15 0 0 0 0 0 0
-16 0 0 0 0 0 0
-17 0 0 0 0 0 0
-18 0 0 0 0 0 0
+8 31 116 198816 0 11 7291669
+9 244 450 1033549 15 98 55022028
+10 109 291 378262 11 54 28505953
+11 136 261 1029934 0 46 28900511
+12 12 33 245962 0 0 0
+13 15 27 106056 1 2 196
+14 49 94 233983 13 41 17247020
+15 182 339 396424 1 188 49738073
+16 191 385 74620528 4 46 22306588
+17 72 115 244690 3 28 12596269
+18 15 41 211165 1 5 2660938
 19 0 0 0 0 0 0
-20 0 0 0 0 0 0
-21 0 0 0 0 0 0
-22 0 0 0 0 0 0
-23 0 0 0 0 0 0
+20 1 3 2362 1 1 492
+21 5 17 100346 1 2 672301
+22 8 20 98807 2 3 663863
+23 5 18 9281644 1 1 492
 END_TIME
-
-# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
-# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
-# The 10 first Hits must be first (order not required for others)
-BEGIN_VISITOR 1
-cust-5-10-9-4.pools.tk-bodensee.net 25 60 319402 20241203122912 20241203111436 /games.html
-END_VISITOR
-
-# Date - Pages - Hits - Bandwidth - Visits
-BEGIN_DAY 1
-20241203 25 60 319402 1
-END_DAY
 
 # Domain - Pages - Hits - Bandwidth
 # The 10 first Pages must be first (order not required for others)
-BEGIN_DOMAIN 1
-net 25 60 319402
+BEGIN_DOMAIN 4
+de 705 1463 2784195
+ip 331 660 84948105
+net 39 86 448349
+us 1 2 5373
 END_DOMAIN
 
 # Cluster ID - Pages - Hits - Bandwidth
@@ -128,7 +119,9 @@ END_LOGIN
 
 # Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
 # The 10 first Hits must be first (order not required for others)
-BEGIN_ROBOT 0
+BEGIN_ROBOT 2
+no_user_agent 4 19828 20241222143902 0
+custo 3 10406 20241220230658 0
 END_ROBOT
 
 # Worm ID - Hits - Bandwidth - Last visit
@@ -146,27 +139,14 @@ END_EMAILSENDER
 BEGIN_EMAILRECEIVER 0
 END_EMAILRECEIVER
 
-# Session range - Number of visits
-BEGIN_SESSION 0
-END_SESSION
-
-# URL - Pages - Bandwidth - Entry - Exit
-# The 10 first Pages must be first (order not required for others)
-BEGIN_SIDER 6
-/ 6 18034 1 0
-/artikelliste.php 6 6306 0 0
-/artikel.php 5 16185 0 0
-/erstellen.html 3 4467 0 0
-/games.html 3 1155 0 0
-/rassismus.html 2 6822 0 0
-END_SIDER
-
 # Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
-BEGIN_FILETYPES 4
-php 11 22491 0 0
-css 17 51465 0 0
-js 18 214968 0 0
-html 14 30478 0 0
+BEGIN_FILETYPES 6
+html 833 1310813 0 0
+jpg 71 83263204 0 0
+css 516 1091439 0 0
+php 243 589057 0 0
+png 263 92616 0 0
+js 285 1838893 0 0
 END_FILETYPES
 
 # Downloads - Hits - Bandwidth
@@ -174,16 +154,35 @@ BEGIN_DOWNLOADS 0
 END_DOWNLOADS
 
 # OS ID - Hits
-BEGIN_OS ID - Hits - Pages 2
-win10 59 24
-ios_iphone 1 1
+BEGIN_OS ID - Hits - Pages 10
+android13 12 8
+linux 31 13
+androidoreo 12 8
+macosx15 11 9
+androidpie 12 8
+android10 26 10
+macosx 21 14
+win10 2013 957
+ios_ipad 23 15
+ios_iphone 50 34
 END_OS
 
 # Browser ID - Hits - Pages
-BEGIN_BROWSER 3
-safari 1 1
-firefox133.0 19 7
-chrome131.0.0.0 40 17
+BEGIN_BROWSER 14
+chrome125.0.0.0 20 10
+firefox130.0 294 193
+safari 10 8
+safari11.0 23 15
+chrome108.0.0.0 21 14
+safari18.1.1 21 16
+chrome114.0.5735.131 12 8
+firefox133.0 1241 556
+safari13.0.3 24 16
+chrome131.0.0.0 515 221
+safari16.1 4 2
+chrome 12 8
+chrome70.0.3538.80 12 8
+safari11.1.1 2 1
 END_BROWSER
 
 # Screen size - Hits
@@ -200,11 +199,11 @@ END_UNKNOWNREFERERBROWSER
 
 # Origin - Pages - Hits 
 BEGIN_ORIGIN 6
-From0 4 4
-From1 0 0
+From0 232 256
+From1 2 2
 From2 0 0
 From3 0 0
-From4 21 56
+From4 842 1953
 From5 0 0
 END_ORIGIN
 
@@ -228,17 +227,122 @@ BEGIN_KEYWORDS 0
 END_KEYWORDS
 
 # Errors - Hits - Bandwidth
-BEGIN_ERRORS 0
+BEGIN_ERRORS 2
+404 170 33320
+301 4 1046
 END_ERRORS
 
-# Payload Range - Payload Frequency
-BEGIN_FILESIZE 4
-100-500 7
-2K-5K 15
-5K+ 12
-1K-2K 29
-END_FILESIZE
-
 # URL with 404 errors - Hits - Last URL referrer
-BEGIN_SIDER_404 0
+BEGIN_SIDER_404 20
+/Bilder/img6.jpg 15 http://www.rasspedia.de.s1.kempf-solutions.de/games.html
+/games.html 11 http://www.rasspedia.de.s1.kempf-solutions.de/
+/datenschutz.html 10 -
+/artikel.php 15 -
+/images/image.png 2 http://www.rasspedia.de.s1.kempf-solutions.de/erstellen.html
+/ABC 1 http://www.rasspedia.de.s1.kempf-solutions.de/erstellen.html
+/Bilder/img4.jpg 15 http://www.rasspedia.de.s1.kempf-solutions.de/games.html
+/mobile-not-supported.html 2 http://www.rasspedia.de.s1.kempf-solutions.de/
+/impressum.html 2 http://www.rasspedia.de.s1.kempf-solutions.de/index.html
+/Bilder/img5.jpg 15 http://www.rasspedia.de.s1.kempf-solutions.de/games.html
+/style1.css 2 http://www.rasspedia.de.s1.kempf-solutions.de/games.html
+/sage2 1 -
+/Bilder/img8.jpg 15 http://www.rasspedia.de.s1.kempf-solutions.de/games.html
+/Bilder/img2.jpg 15 http://www.rasspedia.de.s1.kempf-solutions.de/games.html
+/Bilder/img3.jpg 15 http://www.rasspedia.de.s1.kempf-solutions.de/games.html
+/script1.js 3 http://www.rasspedia.de.s1.kempf-solutions.de/games.html
+/Bilder/img7.jpg 15 http://www.rasspedia.de.s1.kempf-solutions.de/games.html
+/Bilder/Angela_Davis.png 14 http://www.rasspedia.de.s1.kempf-solutions.de/games.html
+/Bilder/Marin_Luther_King.jpg 1 http://www.rasspedia.de.s1.kempf-solutions.de/games.html
+/kontakt 1 -
 END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 18
+office.kempf-solutions.de 680 1425 2712523 20241220102817
+193.158.51.179 260 414 1100090 20241219110646
+cust-5-10-9-4.pools.tk-bodensee.net 39 86 448349 20241217114242
+185.6.123.188 36 144 74150197 20241227173929
+185.6.123.148 23 61 309972 20241205222742
+dynamic-176-002-080-205.176.2.pool.telefonica.de 11 14 13216 20241213170742
+ip-109-43-48-40.web.vodafone.de 8 14 29807 20241206142907
+185.6.123.228 5 17 100346 20241226212059
+185.6.123.149 5 18 9281644 20241229231016
+p508c36ae.dip0.t-ipconnect.de 3 4 6011 20241211092859
+p5dd97daa.dip0.t-ipconnect.de 1 2 7546 20241209165821
+185.6.123.227 1 3 2362 20241214201936
+p4fdcb551.dip0.t-ipconnect.de 1 2 7546 20241206143050
+5.83.191.42 0 1 0 
+185.6.123.159 0 1 0 
+74-50-105-126.static.hvvc.us 1 2 5373 20241211094343
+185.38.49.1 1 1 3494 20241231001635
+ip-005-056-199-209.um04.pools.vodafone-ip.de 1 2 7546 20241206150252
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 19
+20241203 25 60 319402 1
+20241204 116 258 1003746 6
+20241205 311 554 1290249 8
+20241206 326 573 830254 7
+20241207 0 1 0 0
+20241208 0 1 0 0
+20241209 42 73 138507 4
+20241211 120 203 482933 3
+20241212 2 7 12934 1
+20241213 18 104 88794 3
+20241214 1 3 2362 1
+20241217 14 26 128947 1
+20241218 4 52 111193 3
+20241219 41 66 208898 2
+20241220 9 50 32122 2
+20241226 5 17 100346 1
+20241227 36 144 74150197 1
+20241229 5 18 9281644 1
+20241231 1 1 3494 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+2mn-5mn 3
+1h+ 10
+30mn-1h 6
+15mn-30mn 3
+5mn-15mn 2
+30s-2mn 5
+0s-30s 17
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 17
+/games.html 300 133874 4 14
+/ 260 691095 24 5
+/artikel.php 127 469407 4 9
+/artikelliste.php 110 117290 3 3
+/kontakt.html 64 100494 2 1
+/erstellen.html 50 57679 2 3
+/rassismus.html 42 116099 1 0
+/impressum.html 36 52403 1 3
+/mobile.html 22 7346 0 2
+/datenschutz.html 22 36802 1 1
+/create_article.php 6 2360 0 0
+/awstats/awstats.pdadmin.unknownip.html 1 1658 0 0
+/awstats/ 14 98505 3 4
+/usage2/ 2 2226 0 0
+/games1.html 18 7072 1 1
+/test.html 1 1359 0 0
+/usage2/usage_202412.html 1 4201 0 0
+END_SIDER
+
+# Payload Range - Payload Frequency
+BEGIN_FILESIZE 7
+500-1K 268
+5K+ 567
+2K-5K 302
+100-500 550
+44-100 6
+1K-2K 823
+0-44 221
+END_FILESIZE

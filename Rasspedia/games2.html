@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rassismus Fragebogen</title>
+    <link rel="stylesheet" href="games.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" style="text-decoration:none">
+          <h1>Rasspedia</h1>
+          <p>Ein Projekt gegen Rassismus - Gelbe Hand Projekt</p>
+        </a>
+    </header>
+
+    <main>
+
+        <nav>
+            <a href="index.html">Hauptseite</a>
+            <a href="rassismus.html">Über Rassismus</a>
+            <a href="artikelliste.php">Alle Artikel</a>
+            <a href="erstellen.html">Neuer Artikel</a>
+            <a href="games.html">Spiele</a>
+        </nav>
+
+        <section>
+            <h2>Fragebogen: Wie viel weißt du über Rassismus?</h2>
+            <form id="quiz-form" style="max-height: 450px; overflow-y: auto;">
+                <div>
+                    <p>1. Was bedeutet struktureller Rassismus?</p>
+                    <label><input type="radio" name="q1" value="a"> Diskriminierung durch Einzelpersonen</label><br>
+                    <label><input type="radio" name="q1" value="b"> Diskriminierung, die in Institutionen verankert ist</label><br>
+                    <label><input type="radio" name="q1" value="c"> Diskriminierung aufgrund von Missverständnissen</label>
+                </div>
+
+                <div>
+                    <p>2. Welcher der folgenden Begriffe ist ein Beispiel für Alltagsrassismus?</p>
+                    <label><input type="radio" name="q2" value="a"> Offene Anfeindungen</label><br>
+                    <label><input type="radio" name="q2" value="b"> Subtile Vorurteile im Alltag</label><br>
+                    <label><input type="radio" name="q2" value="c"> Politische Gesetze</label>
+                </div>
+
+                <div>
+                    <p>3. Wie kann man Rassismus am besten entgegenwirken?</p>
+                    <label><input type="radio" name="q3" value="a"> Durch Bildung und Bewusstsein</label><br>
+                    <label><input type="radio" name="q3" value="b"> Durch Ignorieren</label><br>
+                    <label><input type="radio" name="q3" value="c"> Durch Vergeltung</label>
+                </div>
+
+                <div>
+                    <p>4. Welche Rolle spielt Sprache im Zusammenhang mit Rassismus?</p>
+                    <label><input type="radio" name="q4" value="a"> Keine Rolle</label><br>
+                    <label><input type="radio" name="q4" value="b"> Sprache kann Vorurteile verstärken</label><br>
+                    <label><input type="radio" name="q4" value="c"> Sprache ist nur im politischen Kontext relevant</label>
+                </div>
+
+                <div>
+                    <p>5. Was kann man tun, wenn man Zeuge von rassistischem Verhalten wird?</p>
+                    <label><input type="radio" name="q5" value="a"> Nichts, um sich selbst zu schützen</label><br>
+                    <label><input type="radio" name="q5" value="b"> Die Situation ignorieren</label><br>
+                    <label><input type="radio" name="q5" value="c"> Eingreifen oder Hilfe holen</label>
+                </div>
+
+                <div>
+                    <p>6. Was bedeutet kulturelle Aneignung?</p>
+                    <label><input type="radio" name="q6" value="a"> Wertschätzung einer anderen Kultur</label><br>
+                    <label><input type="radio" name="q6" value="b"> Übernahme von Elementen einer Kultur ohne Respekt</label><br>
+                    <label><input type="radio" name="q6" value="c"> Ein Austausch zwischen zwei Kulturen</label>
+                </div>
+
+                <div>
+                    <p>7. Welche historischen Ereignisse haben strukturellen Rassismus geprägt?</p>
+                    <label><input type="radio" name="q7" value="a"> Die Aufklärung</label><br>
+                    <label><input type="radio" name="q7" value="b"> Kolonialismus und Sklaverei</label><br>
+                    <label><input type="radio" name="q7" value="c"> Die Industrielle Revolution</label>
+                </div>
+
+                <div>
+                    <p>8. Was versteht man unter positiver Diskriminierung?</p>
+                    <label><input type="radio" name="q8" value="a"> Bevorzugung benachteiligter Gruppen</label><br>
+                    <label><input type="radio" name="q8" value="b"> Diskriminierung mit guter Absicht</label><br>
+                    <label><input type="radio" name="q8" value="c"> Keine Diskriminierung</label>
+                </div>
+
+                <div>
+                    <p>9. Wie kann man Menschen sensibilisieren, die rassistisches Verhalten zeigen?</p>
+                    <label><input type="radio" name="q9" value="a"> Durch Strafen</label><br>
+                    <label><input type="radio" name="q9" value="b"> Durch Dialog und Bildung</label><br>
+                    <label><input type="radio" name="q9" value="c"> Durch Isolation</label>
+                </div>
+
+                <div>
+                    <p>10. Welche Auswirkungen hat Rassismus auf die Gesellschaft?</p>
+                    <label><input type="radio" name="q10" value="a"> Förderung von Vielfalt</label><br>
+                    <label><input type="radio" name="q10" value="b"> Spaltung und Ungerechtigkeit</label><br>
+                    <label><input type="radio" name="q10" value="c"> Keine Auswirkungen</label>
+                </div>
+
+                <button type="button" onclick="evaluateQuiz()">Quiz abschließen</button>
+            </form>
+
+            <div id="quiz-result" style="margin-top:20px;"></div>
+        </section>
+
+        <script>
+            function evaluateQuiz() {
+                const correctAnswers = {
+                    q1: 'b',
+                    q2: 'b',
+                    q3: 'a',
+                    q4: 'b',
+                    q5: 'c',
+                    q6: 'b',
+                    q7: 'b',
+                    q8: 'a',
+                    q9: 'b',
+                    q10: 'b'
+                };
+
+                let score = 0;
+                let totalQuestions = Object.keys(correctAnswers).length;
+
+                for (const [question, answer] of Object.entries(correctAnswers)) {
+                    const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                    if (userAnswer && userAnswer.value === answer) {
+                        score++;
+                    }
+                }
+
+                const resultDiv = document.getElementById('quiz-result');
+                resultDiv.innerHTML = `<p>Du hast ${score} von ${totalQuestions} Fragen richtig beantwortet.</p>`;
+                if (score === totalQuestions) {
+                    resultDiv.innerHTML += '<p>Ausgezeichnet! Du bist gut informiert.</p>';
+                } else {
+                    resultDiv.innerHTML += '<p>Es gibt noch Raum für Verbesserungen. Lies mehr auf unserer Seite!</p>';
+                }
+            }
+        </script>
+
+        <script src="scriptgame.js"></script>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                window.location.href = "mobile.html";
+            }
+        });
+    </script>
+</body>
+</html>
