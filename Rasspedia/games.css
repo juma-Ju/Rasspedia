@@ -119,7 +119,7 @@ header h1 {
 
 /* Hover-Effekt */
 .card:hover {
-    transform: scale(3); 
+    transform: scale(2); 
     z-index: 10; 
     transition: transform 0.3s ease; 
     border: 2px solid #ffe600;

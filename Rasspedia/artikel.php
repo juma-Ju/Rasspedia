@@ -82,12 +82,12 @@ $conn->close();
       <li><a href="artikel.php?id=1">Anti-Schwarzer Rassismus</a></li>
       <li><a href="artikel.php?id=2">Anti-asiatischer Rassismus</a></li>
       <li><a href="artikel.php?id=3">Antisemitismus</a></li>
-      <li><a href="#">Antimuslimischer Rassismus</a></li>
-      <li><a href="#">Anti-Indigener Rassismus</a></li>
-      <li><a href="#">Anti-Roma-Rassismus (Antiziganismus)</a></li>
-      <li><a href="#">Rassismus gegenüber Menschen aus dem Nahen und Mittleren Osten</a></li>
-      <li><a href="#">Rassismus gegen lateinamerikanische Menschen</a></li>
-      <li><a href="#">Rassismus gegenüber anderen Gruppen</a></li>
+      <li><a href="artikel.php?id=4">Antimuslimischer Rassismus</a></li>
+      <li><a href="artikel.php?id=5">Anti-Indigener Rassismus</a></li>
+      <li><a href="artikel.php?id=6">Anti-Roma-Rassismus (Antiziganismus)</a></li>
+      <li><a href="artikel.php?id=7">Rassismus gegenüber Menschen aus dem Nahen und Mittleren Osten</a></li>
+      <li><a href="artikel.php?id=8">Rassismus gegen lateinamerikanische Menschen</a></li>
+      <li><a href="artikelliste.php">Rassismus gegenüber anderen Gruppen</a></li>
     </ul>
   </aside>
 
